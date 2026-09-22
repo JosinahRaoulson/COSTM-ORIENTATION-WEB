@@ -1,0 +1,3894 @@
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1500000$I72PrysTQOdiKQc87zm3Hv$5NmePGm+jLFpVgLq/HkhUYWptoInWzXriwOCWhocrxs=",
+        "last_login": "2026-09-22T05:18:36.900Z",
+        "is_superuser": true,
+        "username": "alisone",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-09-18T07:04:22.333Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "y3dege7lna7pd57gp76q82evo4rt8gm1",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQBe9CHSFgzS9lep8BLQsOTiKQjF1FuXtsyUXSvpl5bxZwW0vYel7CnNiVSXb53SLSM9cDpAfWe-PU6rrMkR8KP2nnY0v5dTvdv4OCvey1AHTKmMnbpN3gpUZB4DWZbMEoL4acMDmnSCsAcmQkmd2JOKECrSz7fAG8gjcU:1x8sto:PDQKgTjVa02QJBh5W1zTRo6rcECQ5MFzDXGGniGDaAg",
+        "expire_date": "2026-10-06T05:18:36.908Z"
+    }
+},
+{
+    "model": "Orientation.formation",
+    "pk": 1,
+    "fields": {
+        "nom": "BUREAUTIQUE",
+        "description": "Ensemble des techniques, outils et des logiciels informatiques permettant d'automatiser et simplifier les activités bureautiques  :  traitement de texte, tableaux et présentations."
+    }
+},
+{
+    "model": "Orientation.formation",
+    "pk": 2,
+    "fields": {
+        "nom": "PRÉ-PROGRAMMATION",
+        "description": "Introduction à la logique de programmation et aux bases du codage."
+    }
+},
+{
+    "model": "Orientation.formation",
+    "pk": 3,
+    "fields": {
+        "nom": "ADMINISTRATION ET RÉSEAUX INFORMATIQUES",
+        "description": "Installation, configuration et sécurisation de réseaux informatiques."
+    }
+},
+{
+    "model": "Orientation.formation",
+    "pk": 4,
+    "fields": {
+        "nom": "CRÉATION DE SITES WEB",
+        "description": "Conception de pages web avec HTML, CSS, JavaScript, PHP."
+    }
+},
+{
+    "model": "Orientation.formation",
+    "pk": 5,
+    "fields": {
+        "nom": "MAINTENANCE INFORMATIQUE",
+        "description": "Diagnostic, dépannage et optimisation d'ordinateur."
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 1,
+    "fields": {
+        "texte": "Quel est votre niveau en informatique ?",
+        "ordre": 1
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 2,
+    "fields": {
+        "texte": "Quel est votre principal objectif en suivant une formation ?",
+        "ordre": 2
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 3,
+    "fields": {
+        "texte": "Lorsque vous découvrez un nouvel outil, que faites-vous généralement en premier ?",
+        "ordre": 3
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 4,
+    "fields": {
+        "texte": "Quelle situation vous semble le plus satisfaisante ?",
+        "ordre": 4
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 5,
+    "fields": {
+        "texte": "Dans un travail de groupe, quel rôle préférez-vous  prendre ?",
+        "ordre": 5
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 6,
+    "fields": {
+        "texte": "Quel environnement de travail vous conviendrait le mieux ?",
+        "ordre": 6
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 7,
+    "fields": {
+        "texte": "Quelle compétence aimeriez-vous développer en priorité ?",
+        "ordre": 7
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 8,
+    "fields": {
+        "texte": "Quelle affirmation vous correspond le mieux ?",
+        "ordre": 8
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 9,
+    "fields": {
+        "texte": "Quel résultat aimeriez-vous pouvoir montrer à la fin de votre formation ?",
+        "ordre": 9
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 10,
+    "fields": {
+        "texte": "Après votre formation, que voudriez-vous surtout être capable de dire ?",
+        "ordre": 10
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 11,
+    "fields": {
+        "texte": "Quel logiciel apprendriez-vous en premier ?",
+        "ordre": 11
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 12,
+    "fields": {
+        "texte": "Qu'est ce qui vous  frustre le plus ?",
+        "ordre": 12
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 13,
+    "fields": {
+        "texte": "Quelle vidéo regarderiez-vous par curiosité ?",
+        "ordre": 13
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 14,
+    "fields": {
+        "texte": "Dans Dix ans, que voudriez-vous faire ?",
+        "ordre": 14
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 15,
+    "fields": {
+        "texte": "Un ami vous demande de l'aider pour son CV. Pourquoi acceptez-vous ?",
+        "ordre": 15
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 16,
+    "fields": {
+        "texte": "Le Wi-Fi tombe en panne. Que faites-vous ?",
+        "ordre": 16
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 17,
+    "fields": {
+        "texte": "Quel stage d'observation choisiriez-vous ?",
+        "ordre": 17
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 18,
+    "fields": {
+        "texte": "Quel compliment preferiez-vous ?",
+        "ordre": 18
+    }
+},
+{
+    "model": "Orientation.question",
+    "pk": 19,
+    "fields": {
+        "texte": "Quelle ambiance de travail préférez-vous ?",
+        "ordre": 19
+    }
+},
+{
+    "model": "Orientation.questionpreliminaire",
+    "pk": 1,
+    "fields": {
+        "texte": "Quel est votre niveau en informatique bureautique ?"
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 1,
+    "fields": {
+        "question": 1,
+        "lettre": "A",
+        "texte": "Je n'ai jamais utilisé un ordinateur.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 2,
+    "fields": {
+        "question": 1,
+        "lettre": "D",
+        "texte": "J'ai quelques notions sur les langages de programmation.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 3,
+    "fields": {
+        "question": 1,
+        "lettre": "B",
+        "texte": "Je connais les bases de la programmation.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 4,
+    "fields": {
+        "question": 1,
+        "lettre": "C",
+        "texte": "J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 5,
+    "fields": {
+        "question": 1,
+        "lettre": "E",
+        "texte": "Je peux résoudre des problèmes informatiques comme le dépannage.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 6,
+    "fields": {
+        "question": 2,
+        "lettre": "A",
+        "texte": "Être  plus efficace dans mes études et mon travail.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 7,
+    "fields": {
+        "question": 2,
+        "lettre": "B",
+        "texte": "Acquérir  une nouvelle compétence professionnelle.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 8,
+    "fields": {
+        "question": 2,
+        "lettre": "C",
+        "texte": "Mieux comprendre les outils numériques.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 9,
+    "fields": {
+        "question": 2,
+        "lettre": "D",
+        "texte": "Créer mes propres projets.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 10,
+    "fields": {
+        "question": 2,
+        "lettre": "E",
+        "texte": "Vérifier ou remettre en état un appareil.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 11,
+    "fields": {
+        "question": 3,
+        "lettre": "A",
+        "texte": "Je cherche un exemple ou tutoriel.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 12,
+    "fields": {
+        "question": 3,
+        "lettre": "B",
+        "texte": "Je teste les fonctions pour comprendre le fonctionnement.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 13,
+    "fields": {
+        "question": 3,
+        "lettre": "C",
+        "texte": "Je demande des explications à quelqu'un.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 14,
+    "fields": {
+        "question": 3,
+        "lettre": "D",
+        "texte": "Je commence directement à créer quelque chose.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 15,
+    "fields": {
+        "question": 3,
+        "lettre": "E",
+        "texte": "Je regarde les réglages et les éléments techniques.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 16,
+    "fields": {
+        "question": 4,
+        "lettre": "A",
+        "texte": "Avoir un travail bien organisé et bien présenté.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 17,
+    "fields": {
+        "question": 4,
+        "lettre": "B",
+        "texte": "Trouver une solution à une difficulté.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 18,
+    "fields": {
+        "question": 4,
+        "lettre": "C",
+        "texte": "Faire fonctionner plusieurs éléments ensemble.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 19,
+    "fields": {
+        "question": 4,
+        "lettre": "D",
+        "texte": "Voir une idée personnelle prendre forme.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 20,
+    "fields": {
+        "question": 4,
+        "lettre": "E",
+        "texte": "Réussir à réparer quelque chose qui ne fonctionnait pas.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 21,
+    "fields": {
+        "question": 5,
+        "lettre": "A",
+        "texte": "Organiser les informations et préparer les documents.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 22,
+    "fields": {
+        "question": 5,
+        "lettre": "B",
+        "texte": "Réfléchir aux problèmes et proposer des solutions;",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 23,
+    "fields": {
+        "question": 5,
+        "lettre": "C",
+        "texte": "Faciliter les échanges et la communication.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 24,
+    "fields": {
+        "question": 5,
+        "lettre": "D",
+        "texte": "Imaginer la présentation ou le résultat final.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 25,
+    "fields": {
+        "question": 5,
+        "lettre": "E",
+        "texte": "Vérifier les détails et résoudre les difficultés pratiques.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 26,
+    "fields": {
+        "question": 6,
+        "lettre": "A",
+        "texte": "Un bureau avec des documents et des outils de gestion.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 27,
+    "fields": {
+        "question": 6,
+        "lettre": "B",
+        "texte": "Un espace ou je peux réfléchir et développer des solutions.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 28,
+    "fields": {
+        "question": 6,
+        "lettre": "C",
+        "texte": "Un environnement avec des équipements et des systèmes connectés.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 29,
+    "fields": {
+        "question": 6,
+        "lettre": "D",
+        "texte": "Un espace de création et de conception.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 30,
+    "fields": {
+        "question": 6,
+        "lettre": "E",
+        "texte": "Un atelier ou espace de dépannage.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 31,
+    "fields": {
+        "question": 7,
+        "lettre": "A",
+        "texte": "Mieux organiser et présenter des informations.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 32,
+    "fields": {
+        "question": 7,
+        "lettre": "B",
+        "texte": "Développer ma logique et ma capacité à résoudre des problèmes.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 33,
+    "fields": {
+        "question": 7,
+        "lettre": "C",
+        "texte": "Comprendre les connexions et la sécurité informatique.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 34,
+    "fields": {
+        "question": 7,
+        "lettre": "D",
+        "texte": "Développer ma créativité numérique.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 35,
+    "fields": {
+        "question": 7,
+        "lettre": "E",
+        "texte": "Développer mes capacités diagnostic et de réparation.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 36,
+    "fields": {
+        "question": 8,
+        "lettre": "A",
+        "texte": "J'aime quand les choses sont bien organisées",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 37,
+    "fields": {
+        "question": 8,
+        "lettre": "B",
+        "texte": "J'aime comprendre pourquoi les choses fonctionnenet.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 38,
+    "fields": {
+        "question": 8,
+        "lettre": "C",
+        "texte": "J'aime comprendre comment les éléments communiquent entre eux.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 39,
+    "fields": {
+        "question": 8,
+        "lettre": "D",
+        "texte": "J'aime transformer les idées en réalisation.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 40,
+    "fields": {
+        "question": 8,
+        "lettre": "E",
+        "texte": "J'aime trouver ce qui ne fonctionne pas et le corriger.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 41,
+    "fields": {
+        "question": 9,
+        "lettre": "A",
+        "texte": "Un document ou tableau professionnel.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 42,
+    "fields": {
+        "question": 9,
+        "lettre": "B",
+        "texte": "Un programme simple qui fonctionne.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 43,
+    "fields": {
+        "question": 9,
+        "lettre": "C",
+        "texte": "Un réseau correctement installé.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 44,
+    "fields": {
+        "question": 9,
+        "lettre": "D",
+        "texte": "Un site web accessible sur internet.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 45,
+    "fields": {
+        "question": 9,
+        "lettre": "E",
+        "texte": "Un ordinateur réparé ou optimisé.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 46,
+    "fields": {
+        "question": 10,
+        "lettre": "A",
+        "texte": "Je maîtrise mieux les outils de travail numérique.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 47,
+    "fields": {
+        "question": 10,
+        "lettre": "B",
+        "texte": "Je sais comprendre et créer des programmes.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 48,
+    "fields": {
+        "question": 10,
+        "lettre": "C",
+        "texte": "JE sais installer et gérer un réseau.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 49,
+    "fields": {
+        "question": 10,
+        "lettre": "D",
+        "texte": "Je suis capable de créer un site web.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 50,
+    "fields": {
+        "question": 10,
+        "lettre": "E",
+        "texte": "Je peux résoudre des problèmes informatiques.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 51,
+    "fields": {
+        "question": 11,
+        "lettre": "A",
+        "texte": "Un traitement de texte",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 52,
+    "fields": {
+        "question": 11,
+        "lettre": "B",
+        "texte": "Un langage de programmation",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 53,
+    "fields": {
+        "question": 11,
+        "lettre": "C",
+        "texte": "Un outil réseau",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 54,
+    "fields": {
+        "question": 11,
+        "lettre": "D",
+        "texte": "Un éditeur de web",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 55,
+    "fields": {
+        "question": 11,
+        "lettre": "E",
+        "texte": "Un logiciel de diagnostic",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 56,
+    "fields": {
+        "question": 12,
+        "lettre": "A",
+        "texte": "Un document mal présenté.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 57,
+    "fields": {
+        "question": 12,
+        "lettre": "B",
+        "texte": "Un problème sans logique.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 58,
+    "fields": {
+        "question": 12,
+        "lettre": "C",
+        "texte": "Une connexion qui ne marche pas.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 59,
+    "fields": {
+        "question": 12,
+        "lettre": "D",
+        "texte": "Un rendu visuel raté.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 60,
+    "fields": {
+        "question": 12,
+        "lettre": "E",
+        "texte": "Une panne introuvable",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 61,
+    "fields": {
+        "question": 13,
+        "lettre": "A",
+        "texte": "Astuce bureautique",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 62,
+    "fields": {
+        "question": 13,
+        "lettre": "B",
+        "texte": "Comment marche un programme.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 63,
+    "fields": {
+        "question": 13,
+        "lettre": "C",
+        "texte": "Comment fonctionne un réseau.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 64,
+    "fields": {
+        "question": 13,
+        "lettre": "D",
+        "texte": "Comment créer un site web.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 65,
+    "fields": {
+        "question": 13,
+        "lettre": "E",
+        "texte": "Comment réparer un PC.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 66,
+    "fields": {
+        "question": 14,
+        "lettre": "A",
+        "texte": "Gérer des documents d'entreprise",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 67,
+    "fields": {
+        "question": 14,
+        "lettre": "B",
+        "texte": "Développer une application",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 68,
+    "fields": {
+        "question": 14,
+        "lettre": "C",
+        "texte": "Sécuriser un réseau",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 69,
+    "fields": {
+        "question": 14,
+        "lettre": "D",
+        "texte": "Concevoir des sites pour des clients",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 70,
+    "fields": {
+        "question": 14,
+        "lettre": "E",
+        "texte": "Entretenir un parc informatique",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 71,
+    "fields": {
+        "question": 15,
+        "lettre": "A",
+        "texte": "Vous savez bien mettre en forme.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 72,
+    "fields": {
+        "question": 15,
+        "lettre": "B",
+        "texte": "Vous structurez bien les infos.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 73,
+    "fields": {
+        "question": 15,
+        "lettre": "C",
+        "texte": "Vous savez configurer l'envoi.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 74,
+    "fields": {
+        "question": 15,
+        "lettre": "D",
+        "texte": "Vous avez un bon sens visuel.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 75,
+    "fields": {
+        "question": 15,
+        "lettre": "E",
+        "texte": "Vous corrigez les bugs du fichier.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 76,
+    "fields": {
+        "question": 16,
+        "lettre": "A",
+        "texte": "Vous notez le souci pour plus tard.",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 77,
+    "fields": {
+        "question": 16,
+        "lettre": "B",
+        "texte": "Vous cherchez la logique du problème.",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 78,
+    "fields": {
+        "question": 16,
+        "lettre": "C",
+        "texte": "Vous vérifiez le routeur.",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 79,
+    "fields": {
+        "question": 16,
+        "lettre": "D",
+        "texte": "ça ne vous dérange pas.",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 80,
+    "fields": {
+        "question": 16,
+        "lettre": "E",
+        "texte": "Vous redémarrez tout un par un.",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 81,
+    "fields": {
+        "question": 17,
+        "lettre": "A",
+        "texte": "Suivre une secrétaire",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 82,
+    "fields": {
+        "question": 17,
+        "lettre": "B",
+        "texte": "Suivre un développeur",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 83,
+    "fields": {
+        "question": 17,
+        "lettre": "C",
+        "texte": "Suivre un technicien réseau",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 84,
+    "fields": {
+        "question": 17,
+        "lettre": "D",
+        "texte": "Suivre un designer web",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 85,
+    "fields": {
+        "question": 17,
+        "lettre": "E",
+        "texte": "Suivre un réparateur",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 86,
+    "fields": {
+        "question": 18,
+        "lettre": "A",
+        "texte": "C'est bien organisé",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 87,
+    "fields": {
+        "question": 18,
+        "lettre": "B",
+        "texte": "Ta solution est efficace",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 88,
+    "fields": {
+        "question": 18,
+        "lettre": "C",
+        "texte": "Tout fonctionne ensemble",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 89,
+    "fields": {
+        "question": 18,
+        "lettre": "D",
+        "texte": "C'est beau et sophistiqué",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 90,
+    "fields": {
+        "question": 18,
+        "lettre": "E",
+        "texte": "Tu as trouvé le problème",
+        "formation": 5
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 91,
+    "fields": {
+        "question": 19,
+        "lettre": "A",
+        "texte": "Un bureau calme",
+        "formation": 1
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 92,
+    "fields": {
+        "question": 19,
+        "lettre": "B",
+        "texte": "Un espace pour réfléchir",
+        "formation": 2
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 93,
+    "fields": {
+        "question": 19,
+        "lettre": "D",
+        "texte": "Une salle de serveurs",
+        "formation": 3
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 94,
+    "fields": {
+        "question": 19,
+        "lettre": "D",
+        "texte": "Un studio créatif",
+        "formation": 4
+    }
+},
+{
+    "model": "Orientation.reponse",
+    "pk": 95,
+    "fields": {
+        "question": 19,
+        "lettre": "E",
+        "texte": "Un atelier de réparation",
+        "formation": 5
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-09-18T07:12:41.760Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "1",
+        "object_repr": "BUREAUTIQUE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-09-18T07:13:55.091Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "2",
+        "object_repr": "PRÉ-PROGRAMMATION",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-09-18T07:15:39.581Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "3",
+        "object_repr": "ADMINISTRATION ET RÉSEAUX INFORMATIQUES",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-09-18T07:17:09.321Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "4",
+        "object_repr": "CRÉATION DE SITES WEB",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-09-18T07:19:02.676Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "5",
+        "object_repr": "MAINTENANCE INFORMATIQUE",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-09-18T07:19:16.600Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "formation"
+        ],
+        "object_id": "4",
+        "object_repr": "CRÉATION DE SITES WEB",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-09-18T07:29:09.042Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "1",
+        "object_repr": "Quel est votre niveau en informatique ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-09-18T07:30:35.665Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "1",
+        "object_repr": "A. Je n'ai jamais utilisé un ordinateur.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-09-18T07:31:48.854Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "2",
+        "object_repr": "B. J'ai quelque notion de base des logiciels comme Word ou Excel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-09-18T07:32:54.842Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "3",
+        "object_repr": "C. Je connais les bases de la programmation.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-09-18T07:33:49.587Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "4",
+        "object_repr": "D. J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-09-18T07:34:43.060Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "5",
+        "object_repr": "E. Je peux résoudre des problèmes informatiques comme le dépannage",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-09-18T07:37:20.959Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "2",
+        "object_repr": "Quel est votre principal objectif en suivant une formation ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-09-18T07:38:28.740Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "3",
+        "object_repr": "Lorsque vous découvrez un nouvel outil, que faites-vous généralement en premier",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-09-18T07:39:11.748Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "3",
+        "object_repr": "Lorsque vous découvrez un nouvel outil, que faites-vous généralement en premier ?",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-09-18T07:40:23.117Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "4",
+        "object_repr": "Quelle situation vous semble le plus satisfaisante ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-09-18T07:41:13.952Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "5",
+        "object_repr": "Dans un travail de groupe, quel rôle préférez-vous  prendre ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-09-18T07:42:08.611Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "6",
+        "object_repr": "Quel environnement de travail vous conviendrait le mieux ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-09-18T07:42:56.716Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "7",
+        "object_repr": "Quelle compétence aimeriez-vous développer en priorité ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-09-18T07:43:38.653Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "8",
+        "object_repr": "Quelle affirmation vous correspond le mieux ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-09-18T07:44:09.984Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "8",
+        "object_repr": "Quelle affirmation vous correspond le mieux ?",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Ordre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-09-18T07:45:44.547Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "9",
+        "object_repr": "Quel résultat aimeriez-vous pouvoir montrer à la fin de votre formation ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-09-18T07:46:57.405Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "10",
+        "object_repr": "Après votre formation, que voudriez-vous surtout être capable de dire ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-09-18T07:48:02.299Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "6",
+        "object_repr": "A. Être  plus efficace dans mes études et mon travail.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-09-18T07:48:55.447Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "7",
+        "object_repr": "B. Acquérir  une nouvelle compétence professionnelle",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-09-18T07:49:29.049Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "8",
+        "object_repr": "C. Mieux comprendre les outils numériques",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-09-18T07:50:20.125Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "9",
+        "object_repr": "D. Créer mes propres projets",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-09-18T07:51:06.570Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "10",
+        "object_repr": "E. Vérifier ou remettre en état un appareil.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-09-18T07:51:23.679Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "9",
+        "object_repr": "D. Créer mes propres projets.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-09-18T07:51:31.343Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "8",
+        "object_repr": "C. Mieux comprendre les outils numériques.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-09-18T07:51:40.826Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "7",
+        "object_repr": "B. Acquérir  une nouvelle compétence professionnelle.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-09-18T07:51:53.696Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "5",
+        "object_repr": "E. Je peux résoudre des problèmes informatiques comme le dépannage.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\", \"Formation\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-09-18T07:52:21.685Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "4",
+        "object_repr": "D. J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\", \"Formation\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-09-18T07:52:35.328Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "3",
+        "object_repr": "C. Je connais les bases de la programmation.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Formation\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-09-18T07:52:46.667Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "2",
+        "object_repr": "B. J'ai quelque notion de base des logiciels comme Word ou Excel.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-09-18T07:52:59.844Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "1",
+        "object_repr": "A. Je n'ai jamais utilisé un ordinateur.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-09-18T07:53:15.809Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "5",
+        "object_repr": "E. Je peux résoudre des problèmes informatiques comme le dépannage.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-09-18T07:53:27.473Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "6",
+        "object_repr": "A. Être  plus efficace dans mes études et mon travail.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-09-18T07:53:30.934Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "7",
+        "object_repr": "B. Acquérir  une nouvelle compétence professionnelle.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-09-18T07:53:34.107Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "8",
+        "object_repr": "C. Mieux comprendre les outils numériques.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-09-18T07:53:38.380Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "9",
+        "object_repr": "D. Créer mes propres projets.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-09-18T07:53:44.909Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "1",
+        "object_repr": "A. Je n'ai jamais utilisé un ordinateur.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2026-09-18T07:55:53.277Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "2",
+        "object_repr": "D. J'ai quelques notions sur les langages de programmation.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Lettre\", \"Texte\", \"Formation\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2026-09-18T07:56:10.353Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "3",
+        "object_repr": "B. Je connais les bases de la programmation.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Lettre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2026-09-18T07:56:30.937Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "4",
+        "object_repr": "C. J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Lettre\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2026-09-18T07:56:54.692Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "5",
+        "object_repr": "E. Je peux résoudre des problèmes informatiques comme le dépannage.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2026-09-18T07:57:21.980Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "4",
+        "object_repr": "C. J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2026-09-18T07:58:16.345Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "11",
+        "object_repr": "A. Je cherche un exemple ou tutoriel.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2026-09-18T07:59:28.146Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "12",
+        "object_repr": "B. Je teste les fonctions pour comprendre le fonctionnement",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2026-09-18T07:59:58.601Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "13",
+        "object_repr": "C. Je demande des explications à quelqu'un",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2026-09-18T08:00:47.219Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "14",
+        "object_repr": "D. JE commence directement à créer quelque chose.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2026-09-18T08:00:57.658Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "12",
+        "object_repr": "B. Je teste les fonctions pour comprendre le fonctionnement.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2026-09-18T08:01:03.637Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "13",
+        "object_repr": "C. Je demande des explications à quelqu'un.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2026-09-18T08:01:42.588Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "15",
+        "object_repr": "E. Je regarde les réglages et les éléments techniques.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2026-09-18T08:02:20.434Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "16",
+        "object_repr": "A. Avoir un travail bien organisé et bien présenté.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2026-09-18T08:02:49.369Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "17",
+        "object_repr": "B. Trouver une solution à une difficulté.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2026-09-18T08:03:29.374Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "18",
+        "object_repr": "C. Faire fonctionner plusieurs éléments ensemble.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2026-09-18T08:03:57.208Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "19",
+        "object_repr": "D. Voir une idée personnelle prendre forme.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2026-09-18T08:04:44.085Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "20",
+        "object_repr": "E. Réussir à réparer quelque chose qui ne fonctionnait pas.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2026-09-18T08:05:21.871Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "21",
+        "object_repr": "A. Organiser les informations et préparer les documents.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2026-09-18T08:06:00.982Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "22",
+        "object_repr": "B. Trouver les solutions à une difficulté.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2026-09-18T08:06:13.865Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "17",
+        "object_repr": "B. Trouver une solution à une difficulté.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2026-09-18T08:06:20.337Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "21",
+        "object_repr": "A. Organiser les informations et préparer les documents.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2026-09-18T08:06:31.353Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "14",
+        "object_repr": "D. Je commence directement à créer quelque chose.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2026-09-18T08:07:13.920Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "22",
+        "object_repr": "B. Réfléchir aux problèmes et proposer des solutions;",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2026-09-18T08:07:47.499Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "23",
+        "object_repr": "C. Faciliter les échanges et la communication.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2026-09-18T08:09:06.413Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "24",
+        "object_repr": "D. Imaginer la présentation ou le résultat final.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2026-09-18T08:10:04.294Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "25",
+        "object_repr": "E. Vérifier les détails et résoudre les difficultés pratiques.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2026-09-18T08:12:02.872Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "26",
+        "object_repr": "A. Un bureau avec des documents et des outils de gestion.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2026-09-18T08:12:50.737Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "27",
+        "object_repr": "B. Un espace ou je peux réfléchir et développer des solutions.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2026-09-18T08:13:44.161Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "28",
+        "object_repr": "C. Un environnement avec des équipements et des systèmes connectés.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2026-09-18T08:14:27.561Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "29",
+        "object_repr": "D. Un espace de création et de conception.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2026-09-18T08:15:01.025Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "30",
+        "object_repr": "E. Un atelier ou espace de dépannage.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2026-09-18T08:15:50.975Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "31",
+        "object_repr": "A. Mieux organiser et présenter des informations.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2026-09-18T08:16:31.862Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "32",
+        "object_repr": "B. Développer ma logique et ma capacité à résoudre des problèmes.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2026-09-18T08:17:10.512Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "33",
+        "object_repr": "C. Comprendre les connexions et la sécurité informatique.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2026-09-18T08:17:45.828Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "34",
+        "object_repr": "D. Développer ma créativité numérique.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2026-09-18T08:18:30.910Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "35",
+        "object_repr": "E. Développer mes capacités diagnostic et de réparation.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2026-09-18T08:18:34.897Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "34",
+        "object_repr": "D. Développer ma créativité numérique.",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2026-09-18T08:19:31.414Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "36",
+        "object_repr": "A. J'aime quand les choses sont bien organisées",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2026-09-18T08:20:09.452Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "37",
+        "object_repr": "B. J'aime comprendre pourquoi les choses fonctionnenet.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2026-09-18T08:20:48.043Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "38",
+        "object_repr": "C. J'aime comprendre comment les éléments communiquent entre eux.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2026-09-18T08:21:21.985Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "39",
+        "object_repr": "D. J'aime transformer les idées en réalisation.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2026-09-18T08:22:14.588Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "40",
+        "object_repr": "E. J'aime trouver ce qui ne fonctionne pas et le corriger.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2026-09-18T08:22:46.947Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "41",
+        "object_repr": "A. Un document ou tableau professionnel.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2026-09-18T08:23:21.871Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "42",
+        "object_repr": "B. Un programme simple qui fonctionne",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2026-09-18T08:23:54.965Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "43",
+        "object_repr": "C. Un réseau correctement installé.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2026-09-18T08:24:32.889Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "44",
+        "object_repr": "D. Un site web accessible sur internet.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2026-09-18T08:24:40.076Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "42",
+        "object_repr": "B. Un programme simple qui fonctionne.",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2026-09-18T08:25:21.978Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "45",
+        "object_repr": "E. Un ordinateur réparé ou optimisé.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2026-09-18T08:26:08.238Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "46",
+        "object_repr": "A. Je maîtrise mieux les outils de travail numérique.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2026-09-18T08:26:40.404Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "47",
+        "object_repr": "B. Je sais comprendre et créer des programmes.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2026-09-18T08:27:03.717Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "48",
+        "object_repr": "C. JE sais installer et gérer un réseau.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2026-09-18T08:27:37.823Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "49",
+        "object_repr": "D. Je suis capable de créer un site web.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2026-09-18T08:28:34.463Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "50",
+        "object_repr": "E. Je peux résoudre des problèmes informatiques.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2026-09-18T10:09:30.065Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "11",
+        "object_repr": "Quel logiciel apprendriez-vous en premier ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2026-09-18T10:10:38.376Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "12",
+        "object_repr": "Qu'est ce qui vous  frustre le plus ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2026-09-18T10:11:58.806Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "13",
+        "object_repr": "Quelle documentaire regarderiez-vous par curiosité ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2026-09-18T10:12:41.608Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "13",
+        "object_repr": "Quelle vidéo regarderiez-vous par curiosité ?",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Texte\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2026-09-18T10:13:26.086Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "14",
+        "object_repr": "Dans Dix ans, que voudriez-vous faire ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2026-09-18T11:27:46.696Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "15",
+        "object_repr": "Un ami vous demande de l'aider pour son CV. Pourquoi acceptez-vous ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2026-09-18T11:28:45.925Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "16",
+        "object_repr": "Le Wi-Fi tombe en panne. Que faites-vous ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2026-09-18T11:29:16.482Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "17",
+        "object_repr": "Quel stage d'observation choisiriez-vous ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2026-09-18T11:29:50.906Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "18",
+        "object_repr": "Quel compliment preferiez-vous ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2026-09-18T11:30:34.148Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "question"
+        ],
+        "object_id": "19",
+        "object_repr": "Quelle ambiance de travail préférez-vous ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2026-09-18T11:32:51.429Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "51",
+        "object_repr": "A. Un traitement de texte",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2026-09-18T11:33:27.954Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "52",
+        "object_repr": "B. Un langage de programmation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2026-09-18T11:33:57.989Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "53",
+        "object_repr": "C. Un outil réseau",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2026-09-18T11:34:33.361Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "54",
+        "object_repr": "D. Un éditeur de web",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2026-09-18T11:35:01.345Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "55",
+        "object_repr": "E. Un logiciel de diagnostic",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2026-09-18T11:35:30.879Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "56",
+        "object_repr": "A. Un document mal présenté.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2026-09-18T11:35:53.161Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "57",
+        "object_repr": "B. Un problème sans logique.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+        "action_time": "2026-09-18T11:36:18.675Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "58",
+        "object_repr": "C. Une connexion qui ne marche pas.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+        "action_time": "2026-09-18T11:36:43.733Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "59",
+        "object_repr": "D. Un rendu visuel raté.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+        "action_time": "2026-09-18T11:37:05.478Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "60",
+        "object_repr": "E. Une panne introuvable",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+        "action_time": "2026-09-18T11:37:55.896Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "61",
+        "object_repr": "A. Astuce bureautique",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+        "action_time": "2026-09-18T11:38:18.198Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "62",
+        "object_repr": "B. Comment marche un programme.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+        "action_time": "2026-09-18T11:38:46.078Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "63",
+        "object_repr": "C. Comment fonctionne un réseau.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+        "action_time": "2026-09-18T11:39:23.876Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "64",
+        "object_repr": "D. Comment créer un site web.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+        "action_time": "2026-09-18T11:39:46.399Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "65",
+        "object_repr": "E. Comment réparer un PC.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+        "action_time": "2026-09-18T11:40:22.692Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "66",
+        "object_repr": "A. Gérer des documents d'entreprise",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+        "action_time": "2026-09-18T11:40:47.008Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "67",
+        "object_repr": "B. Développer une application",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+        "action_time": "2026-09-18T11:41:08.030Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "68",
+        "object_repr": "C. Sécuriser un réseau",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+        "action_time": "2026-09-18T11:41:35.264Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "69",
+        "object_repr": "D. Concevoir des sites pour des clients",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+        "action_time": "2026-09-18T11:42:02.275Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "70",
+        "object_repr": "E. Entretenir un parc informatique",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+        "action_time": "2026-09-18T11:42:43.666Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "71",
+        "object_repr": "A. Vous savez bien mettre en forme.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 127,
+    "fields": {
+        "action_time": "2026-09-18T11:43:24.119Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "72",
+        "object_repr": "B. Vous structurez bien les infos.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 128,
+    "fields": {
+        "action_time": "2026-09-18T11:44:06.842Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "73",
+        "object_repr": "C. Vous savez configurer l'envoi.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 129,
+    "fields": {
+        "action_time": "2026-09-18T11:44:51.107Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "74",
+        "object_repr": "D. Vous avez un bon sens visuel.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 130,
+    "fields": {
+        "action_time": "2026-09-18T11:45:21.120Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "75",
+        "object_repr": "E. Vous corrigez les bugs du fichier.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 131,
+    "fields": {
+        "action_time": "2026-09-18T11:45:58.927Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "76",
+        "object_repr": "A. Vous notez le souci pour plus tard.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 132,
+    "fields": {
+        "action_time": "2026-09-18T11:46:32.857Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "77",
+        "object_repr": "B. Vous cherchez la logique du problème.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 133,
+    "fields": {
+        "action_time": "2026-09-18T11:47:03.864Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "78",
+        "object_repr": "C. Vous vérifiez le routeur.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 134,
+    "fields": {
+        "action_time": "2026-09-18T11:47:39.493Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "79",
+        "object_repr": "D. ça ne vous dérange pas.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 135,
+    "fields": {
+        "action_time": "2026-09-18T11:48:10.742Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "80",
+        "object_repr": "E. Vous redémarrez tout un par un.",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 136,
+    "fields": {
+        "action_time": "2026-09-18T11:48:42.005Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "81",
+        "object_repr": "A. Suivre une secrétaire",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 137,
+    "fields": {
+        "action_time": "2026-09-18T11:49:02.774Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "82",
+        "object_repr": "B. Suivre un développeur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 138,
+    "fields": {
+        "action_time": "2026-09-18T11:49:31.502Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "83",
+        "object_repr": "C. Suivre un technicien réseau",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 139,
+    "fields": {
+        "action_time": "2026-09-18T11:49:57.713Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "84",
+        "object_repr": "D. Suivre un designer web",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 140,
+    "fields": {
+        "action_time": "2026-09-18T11:51:26.503Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "85",
+        "object_repr": "E. Suivre un réparateur",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 141,
+    "fields": {
+        "action_time": "2026-09-18T11:51:53.501Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "86",
+        "object_repr": "A. C'est bien organisé",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 142,
+    "fields": {
+        "action_time": "2026-09-18T11:52:15.718Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "87",
+        "object_repr": "B. Ta solution est efficace",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 143,
+    "fields": {
+        "action_time": "2026-09-18T11:52:52.257Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "88",
+        "object_repr": "C. Tout fonctionne ensemble",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 144,
+    "fields": {
+        "action_time": "2026-09-18T11:53:21.719Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "89",
+        "object_repr": "D. C'est beau et sophistiqué",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 145,
+    "fields": {
+        "action_time": "2026-09-18T11:53:51.622Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "90",
+        "object_repr": "E. Tu as trouvé le problème",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 146,
+    "fields": {
+        "action_time": "2026-09-18T11:54:23.972Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "91",
+        "object_repr": "A. Un bureau calme",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 147,
+    "fields": {
+        "action_time": "2026-09-18T11:54:48.457Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "92",
+        "object_repr": "B. Un espace pour réfléchir",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 148,
+    "fields": {
+        "action_time": "2026-09-18T11:55:09.723Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "93",
+        "object_repr": "D. Une salle de serveurs",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 149,
+    "fields": {
+        "action_time": "2026-09-18T11:55:27.808Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "94",
+        "object_repr": "D. Un studio créatif",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 150,
+    "fields": {
+        "action_time": "2026-09-18T11:55:51.521Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "reponse"
+        ],
+        "object_id": "95",
+        "object_repr": "E. Un atelier de réparation",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 151,
+    "fields": {
+        "action_time": "2026-09-18T12:51:07.623Z",
+        "user": [
+            "alisone"
+        ],
+        "content_type": [
+            "Orientation",
+            "questionpreliminaire"
+        ],
+        "object_id": "1",
+        "object_repr": "Quel est votre niveau en informatique bureautique ?",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
