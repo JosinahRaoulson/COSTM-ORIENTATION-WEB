@@ -1,0 +1,1673 @@
+[
+{
+  "model": "Orientation.formation",
+  "pk": 1,
+  "fields": {
+    "nom": "BUREAUTIQUE",
+    "description": "Le bureautique regroupe l'ensemble des outils informatiques utilisés au quotidien dans un environnement professionnel : traitement de texte, tableurs et logiciels de présentation.\r\nCette formation vous apprend à créer et mettre en forme des documents professionnels ( Lettres, rapports, CV ), à manipuler des tableaux de calcul ( Formules, graphiques, tris et filtres ), et à concevoir des présentations claires et efficaces pour vos réunions ou exposés.\r\nElle est particulièrement adaptée aux personnes qui souhaitent être opérationnelles rapidement dans un poste administratif, ou qui veulent renforcer leurs bases avant de suivre une formation plus technique comme la pré-programmation ou la création de site web."
+  }
+},
+{
+  "model": "Orientation.formation",
+  "pk": 2,
+  "fields": {
+    "nom": "PRÉ-PROGRAMMATION",
+    "description": "Introduction à la logique de programmation et aux bases du codage.\r\nAvant de se spécialiser dans un langage de programmation précis, cette formation pose les fondations essentielles : comprendre comment un ordinateur exécute des instructions, apprendre à décomposer un problème  en étapes simples, et découvrir les notions de base communes à tous les langages ( variables, conditions, boucles, fonctions ).\r\nÀ travers ces exercices pratiques et progressifs, vous développerez votre logique et votre capacité à résoudre des problèmes de façon structurée - une compétence essentielle pour toute carrière en informatique.\r\nCette formation est le point de départ idéal avant de vous spécialiser en développement web, création de logiciels, ou toute voie technique du numérique."
+  }
+},
+{
+  "model": "Orientation.formation",
+  "pk": 3,
+  "fields": {
+    "nom": "ADMINISTRATION ET RÉSEAUX INFORMATIQUES",
+    "description": "Cette formation vous initie à l'installation, la configuration et la sécurisation des réseaux informatiques : câblage, configuration de routeurs et switchs, adressage IP, protocole de communication, et bases de la cybersécurité.\r\nVous apprendrez à faire fonctionner plusieurs appareils ensemble au sein d'un même réseau ( ordinateur, imprimantes, serveurs ), à diagnostiquer les pannes de connexion courantes, et à mettre en pace des mesures de protection contre les intrusions.\r\nCette formation convient particulièrement à ceux qui aiment comprendre comment les systèmes communiquent entre eux et qui souhaitent gérer l'infrastructure informatique d'une entreprise, d'une école ou d'une organisation.\r\nDes notions de base en informatique sont recommandées, sans être obligatoires."
+  }
+},
+{
+  "model": "Orientation.formation",
+  "pk": 4,
+  "fields": {
+    "nom": "CRÉATION DE SITES WEB",
+    "description": "Cette formation vous apprend à concevoir des pages web de A à Z avec les trois langages fondamentaux du développement web : HTML pour la structure, CSS pour l mise en forme visuelle, et JavaScript pour l'interactivité.\r\nVous apprendrez à construire un site vitrine complet - de la première ligne de code jusqu'à la mise en ligne - en respectant les bonnes pratiques de mise en page, de responsive design ( adaptation aux mobiles ) et d'accessibilité.\r\nIdéale pour les personnes créatives qui aiment concevoir des interfaces visuellement soignées, cette formation ouvre la voie vers les métiers de développement Front-end  ou de créateur de contenu web."
+  }
+},
+{
+  "model": "Orientation.formation",
+  "pk": 5,
+  "fields": {
+    "nom": "MAINTENANCE INFORMATIQUE",
+    "description": "Cette formation forme aux compétences essentielles du diagnostic, du dépannage et de l'optimisation des ordinateurs : identification de pannes matérielles et logicielles, remplacement de composants, nettoyage et optimisation des performances, réinstallation de systèmes d'exploitation.\r\nVous apprendrez une méthode rigoureuse pour identifier l'origine d'un problème informatique et le résoudre efficacement, que ce soit sur un ordinateur personnel ou dans le cadre de la gestion d'un parc informatique en entreprise.\r\nCette formation convient aux personnes qui aiment comprendre le fonctionnement concret des machines et qui trouvent satisfaisant de réparer ce qui ne fonctionne pas."
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 1,
+  "fields": {
+    "texte": "Quel est votre niveau en informatique ?",
+    "ordre": 1
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 2,
+  "fields": {
+    "texte": "Quel est votre principal objectif en suivant une formation ?",
+    "ordre": 2
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 3,
+  "fields": {
+    "texte": "Lorsque vous découvrez un nouvel outil, que faites-vous généralement en premier ?",
+    "ordre": 3
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 4,
+  "fields": {
+    "texte": "Quelle situation vous semble le plus satisfaisante ?",
+    "ordre": 4
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 5,
+  "fields": {
+    "texte": "Dans un travail de groupe, quel rôle préférez-vous  prendre ?",
+    "ordre": 5
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 6,
+  "fields": {
+    "texte": "Quel environnement de travail vous conviendrait le mieux ?",
+    "ordre": 6
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 7,
+  "fields": {
+    "texte": "Quelle compétence aimeriez-vous développer en priorité ?",
+    "ordre": 7
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 8,
+  "fields": {
+    "texte": "Quelle affirmation vous correspond le mieux ?",
+    "ordre": 8
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 9,
+  "fields": {
+    "texte": "Quel résultat aimeriez-vous pouvoir montrer à la fin de votre formation ?",
+    "ordre": 9
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 10,
+  "fields": {
+    "texte": "Après votre formation, que voudriez-vous surtout être capable de dire ?",
+    "ordre": 10
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 11,
+  "fields": {
+    "texte": "Quel logiciel apprendriez-vous en premier ?",
+    "ordre": 11
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 12,
+  "fields": {
+    "texte": "Qu'est ce qui vous  frustre le plus ?",
+    "ordre": 12
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 13,
+  "fields": {
+    "texte": "Quelle vidéo regarderiez-vous par curiosité ?",
+    "ordre": 13
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 14,
+  "fields": {
+    "texte": "Dans Dix ans, que voudriez-vous faire ?",
+    "ordre": 14
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 15,
+  "fields": {
+    "texte": "Un ami vous demande de l'aider pour son CV. Pourquoi acceptez-vous ?",
+    "ordre": 15
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 16,
+  "fields": {
+    "texte": "Le Wi-Fi tombe en panne. Que faites-vous ?",
+    "ordre": 16
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 17,
+  "fields": {
+    "texte": "Quel stage d'observation choisiriez-vous ?",
+    "ordre": 17
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 18,
+  "fields": {
+    "texte": "Quel compliment preferiez-vous ?",
+    "ordre": 18
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 19,
+  "fields": {
+    "texte": "Quelle ambiance de travail préférez-vous ?",
+    "ordre": 19
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 20,
+  "fields": {
+    "texte": "Quel objet vous intéresserait le plus ?",
+    "ordre": 20
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 21,
+  "fields": {
+    "texte": "Quel titre de poste vous attire ?",
+    "ordre": 21
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 22,
+  "fields": {
+    "texte": "Quelle activité vous ennuierait le moins ?",
+    "ordre": 22
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 23,
+  "fields": {
+    "texte": "Face un mode d'emploi, vous préférez.......",
+    "ordre": 23
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 24,
+  "fields": {
+    "texte": "Quel type d'erreur vous agace le plus ?",
+    "ordre": 24
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 25,
+  "fields": {
+    "texte": "Quel outil aimeriez-vous maîtriser parfaitement ?",
+    "ordre": 25
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 26,
+  "fields": {
+    "texte": "Comment décririez vous votre esprit ?",
+    "ordre": 26
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 27,
+  "fields": {
+    "texte": "Quel serait votre premier réflexe face à un ordinateur lent ?",
+    "ordre": 27
+  }
+},
+{
+  "model": "Orientation.question",
+  "pk": 28,
+  "fields": {
+    "texte": "Quel type de contenu partageriez vous sur les réseaux ?",
+    "ordre": 28
+  }
+},
+{
+  "model": "Orientation.questionpreliminaire",
+  "pk": 1,
+  "fields": {
+    "texte": "Quel est votre niveau en informatique bureautique ?"
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 1,
+  "fields": {
+    "question": 1,
+    "lettre": "A",
+    "texte": "Je n'ai jamais utilisé un ordinateur.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 2,
+  "fields": {
+    "question": 1,
+    "lettre": "D",
+    "texte": "J'ai quelques notions sur les langages de programmation.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 3,
+  "fields": {
+    "question": 1,
+    "lettre": "B",
+    "texte": "Je connais les bases de la programmation.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 4,
+  "fields": {
+    "question": 1,
+    "lettre": "C",
+    "texte": "J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 5,
+  "fields": {
+    "question": 1,
+    "lettre": "E",
+    "texte": "Je peux résoudre des problèmes informatiques comme le dépannage.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 6,
+  "fields": {
+    "question": 2,
+    "lettre": "A",
+    "texte": "Être  plus efficace dans mes études et mon travail.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 7,
+  "fields": {
+    "question": 2,
+    "lettre": "B",
+    "texte": "Acquérir  une nouvelle compétence professionnelle.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 8,
+  "fields": {
+    "question": 2,
+    "lettre": "C",
+    "texte": "Mieux comprendre les outils numériques.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 9,
+  "fields": {
+    "question": 2,
+    "lettre": "D",
+    "texte": "Créer mes propres projets.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 10,
+  "fields": {
+    "question": 2,
+    "lettre": "E",
+    "texte": "Vérifier ou remettre en état un appareil.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 11,
+  "fields": {
+    "question": 3,
+    "lettre": "A",
+    "texte": "Je cherche un exemple ou tutoriel.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 12,
+  "fields": {
+    "question": 3,
+    "lettre": "B",
+    "texte": "Je teste les fonctions pour comprendre le fonctionnement.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 13,
+  "fields": {
+    "question": 3,
+    "lettre": "C",
+    "texte": "Je demande des explications à quelqu'un.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 14,
+  "fields": {
+    "question": 3,
+    "lettre": "D",
+    "texte": "Je commence directement à créer quelque chose.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 15,
+  "fields": {
+    "question": 3,
+    "lettre": "E",
+    "texte": "Je regarde les réglages et les éléments techniques.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 16,
+  "fields": {
+    "question": 4,
+    "lettre": "A",
+    "texte": "Avoir un travail bien organisé et bien présenté.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 17,
+  "fields": {
+    "question": 4,
+    "lettre": "B",
+    "texte": "Trouver une solution à une difficulté.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 18,
+  "fields": {
+    "question": 4,
+    "lettre": "C",
+    "texte": "Faire fonctionner plusieurs éléments ensemble.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 19,
+  "fields": {
+    "question": 4,
+    "lettre": "D",
+    "texte": "Voir une idée personnelle prendre forme.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 20,
+  "fields": {
+    "question": 4,
+    "lettre": "E",
+    "texte": "Réussir à réparer quelque chose qui ne fonctionnait pas.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 21,
+  "fields": {
+    "question": 5,
+    "lettre": "A",
+    "texte": "Organiser les informations et préparer les documents.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 22,
+  "fields": {
+    "question": 5,
+    "lettre": "B",
+    "texte": "Réfléchir aux problèmes et proposer des solutions;",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 23,
+  "fields": {
+    "question": 5,
+    "lettre": "C",
+    "texte": "Faciliter les échanges et la communication.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 24,
+  "fields": {
+    "question": 5,
+    "lettre": "D",
+    "texte": "Imaginer la présentation ou le résultat final.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 25,
+  "fields": {
+    "question": 5,
+    "lettre": "E",
+    "texte": "Vérifier les détails et résoudre les difficultés pratiques.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 26,
+  "fields": {
+    "question": 6,
+    "lettre": "A",
+    "texte": "Un bureau avec des documents et des outils de gestion.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 27,
+  "fields": {
+    "question": 6,
+    "lettre": "B",
+    "texte": "Un espace ou je peux réfléchir et développer des solutions.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 28,
+  "fields": {
+    "question": 6,
+    "lettre": "C",
+    "texte": "Un environnement avec des équipements et des systèmes connectés.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 29,
+  "fields": {
+    "question": 6,
+    "lettre": "D",
+    "texte": "Un espace de création et de conception.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 30,
+  "fields": {
+    "question": 6,
+    "lettre": "E",
+    "texte": "Un atelier ou espace de dépannage.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 31,
+  "fields": {
+    "question": 7,
+    "lettre": "A",
+    "texte": "Mieux organiser et présenter des informations.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 32,
+  "fields": {
+    "question": 7,
+    "lettre": "B",
+    "texte": "Développer ma logique et ma capacité à résoudre des problèmes.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 33,
+  "fields": {
+    "question": 7,
+    "lettre": "C",
+    "texte": "Comprendre les connexions et la sécurité informatique.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 34,
+  "fields": {
+    "question": 7,
+    "lettre": "D",
+    "texte": "Développer ma créativité numérique.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 35,
+  "fields": {
+    "question": 7,
+    "lettre": "E",
+    "texte": "Développer mes capacités diagnostic et de réparation.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 36,
+  "fields": {
+    "question": 8,
+    "lettre": "A",
+    "texte": "J'aime quand les choses sont bien organisées",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 37,
+  "fields": {
+    "question": 8,
+    "lettre": "B",
+    "texte": "J'aime comprendre pourquoi les choses fonctionnenet.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 38,
+  "fields": {
+    "question": 8,
+    "lettre": "C",
+    "texte": "J'aime comprendre comment les éléments communiquent entre eux.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 39,
+  "fields": {
+    "question": 8,
+    "lettre": "D",
+    "texte": "J'aime transformer les idées en réalisation.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 40,
+  "fields": {
+    "question": 8,
+    "lettre": "E",
+    "texte": "J'aime trouver ce qui ne fonctionne pas et le corriger.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 41,
+  "fields": {
+    "question": 9,
+    "lettre": "A",
+    "texte": "Un document ou tableau professionnel.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 42,
+  "fields": {
+    "question": 9,
+    "lettre": "B",
+    "texte": "Un programme simple qui fonctionne.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 43,
+  "fields": {
+    "question": 9,
+    "lettre": "C",
+    "texte": "Un réseau correctement installé.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 44,
+  "fields": {
+    "question": 9,
+    "lettre": "D",
+    "texte": "Un site web accessible sur internet.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 45,
+  "fields": {
+    "question": 9,
+    "lettre": "E",
+    "texte": "Un ordinateur réparé ou optimisé.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 46,
+  "fields": {
+    "question": 10,
+    "lettre": "A",
+    "texte": "Je maîtrise mieux les outils de travail numérique.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 47,
+  "fields": {
+    "question": 10,
+    "lettre": "B",
+    "texte": "Je sais comprendre et créer des programmes.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 48,
+  "fields": {
+    "question": 10,
+    "lettre": "C",
+    "texte": "JE sais installer et gérer un réseau.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 49,
+  "fields": {
+    "question": 10,
+    "lettre": "D",
+    "texte": "Je suis capable de créer un site web.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 50,
+  "fields": {
+    "question": 10,
+    "lettre": "E",
+    "texte": "Je peux résoudre des problèmes informatiques.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 51,
+  "fields": {
+    "question": 11,
+    "lettre": "A",
+    "texte": "Un traitement de texte",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 52,
+  "fields": {
+    "question": 11,
+    "lettre": "B",
+    "texte": "Un langage de programmation",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 53,
+  "fields": {
+    "question": 11,
+    "lettre": "C",
+    "texte": "Un outil réseau",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 54,
+  "fields": {
+    "question": 11,
+    "lettre": "D",
+    "texte": "Un éditeur de web",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 55,
+  "fields": {
+    "question": 11,
+    "lettre": "E",
+    "texte": "Un logiciel de diagnostic",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 56,
+  "fields": {
+    "question": 12,
+    "lettre": "A",
+    "texte": "Un document mal présenté.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 57,
+  "fields": {
+    "question": 12,
+    "lettre": "B",
+    "texte": "Un problème sans logique.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 58,
+  "fields": {
+    "question": 12,
+    "lettre": "C",
+    "texte": "Une connexion qui ne marche pas.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 59,
+  "fields": {
+    "question": 12,
+    "lettre": "D",
+    "texte": "Un rendu visuel raté.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 60,
+  "fields": {
+    "question": 12,
+    "lettre": "E",
+    "texte": "Une panne introuvable",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 61,
+  "fields": {
+    "question": 13,
+    "lettre": "A",
+    "texte": "Astuce bureautique",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 62,
+  "fields": {
+    "question": 13,
+    "lettre": "B",
+    "texte": "Comment marche un programme.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 63,
+  "fields": {
+    "question": 13,
+    "lettre": "C",
+    "texte": "Comment fonctionne un réseau.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 64,
+  "fields": {
+    "question": 13,
+    "lettre": "D",
+    "texte": "Comment créer un site web.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 65,
+  "fields": {
+    "question": 13,
+    "lettre": "E",
+    "texte": "Comment réparer un PC.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 66,
+  "fields": {
+    "question": 14,
+    "lettre": "A",
+    "texte": "Gérer des documents d'entreprise",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 67,
+  "fields": {
+    "question": 14,
+    "lettre": "B",
+    "texte": "Développer une application",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 68,
+  "fields": {
+    "question": 14,
+    "lettre": "C",
+    "texte": "Sécuriser un réseau",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 69,
+  "fields": {
+    "question": 14,
+    "lettre": "D",
+    "texte": "Concevoir des sites pour des clients",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 70,
+  "fields": {
+    "question": 14,
+    "lettre": "E",
+    "texte": "Entretenir un parc informatique",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 71,
+  "fields": {
+    "question": 15,
+    "lettre": "A",
+    "texte": "Vous savez bien mettre en forme.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 72,
+  "fields": {
+    "question": 15,
+    "lettre": "B",
+    "texte": "Vous structurez bien les infos.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 73,
+  "fields": {
+    "question": 15,
+    "lettre": "C",
+    "texte": "Vous savez configurer l'envoi.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 74,
+  "fields": {
+    "question": 15,
+    "lettre": "D",
+    "texte": "Vous avez un bon sens visuel.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 75,
+  "fields": {
+    "question": 15,
+    "lettre": "E",
+    "texte": "Vous corrigez les bugs du fichier.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 76,
+  "fields": {
+    "question": 16,
+    "lettre": "A",
+    "texte": "Vous notez le souci pour plus tard.",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 77,
+  "fields": {
+    "question": 16,
+    "lettre": "B",
+    "texte": "Vous cherchez la logique du problème.",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 78,
+  "fields": {
+    "question": 16,
+    "lettre": "C",
+    "texte": "Vous vérifiez le routeur.",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 79,
+  "fields": {
+    "question": 16,
+    "lettre": "D",
+    "texte": "ça ne vous dérange pas.",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 80,
+  "fields": {
+    "question": 16,
+    "lettre": "E",
+    "texte": "Vous redémarrez tout un par un.",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 81,
+  "fields": {
+    "question": 17,
+    "lettre": "A",
+    "texte": "Suivre une secrétaire",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 82,
+  "fields": {
+    "question": 17,
+    "lettre": "B",
+    "texte": "Suivre un développeur",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 83,
+  "fields": {
+    "question": 17,
+    "lettre": "C",
+    "texte": "Suivre un technicien réseau",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 84,
+  "fields": {
+    "question": 17,
+    "lettre": "D",
+    "texte": "Suivre un designer web",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 85,
+  "fields": {
+    "question": 17,
+    "lettre": "E",
+    "texte": "Suivre un réparateur",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 86,
+  "fields": {
+    "question": 18,
+    "lettre": "A",
+    "texte": "C'est bien organisé",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 87,
+  "fields": {
+    "question": 18,
+    "lettre": "B",
+    "texte": "Ta solution est efficace",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 88,
+  "fields": {
+    "question": 18,
+    "lettre": "C",
+    "texte": "Tout fonctionne ensemble",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 89,
+  "fields": {
+    "question": 18,
+    "lettre": "D",
+    "texte": "C'est beau et sophistiqué",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 90,
+  "fields": {
+    "question": 18,
+    "lettre": "E",
+    "texte": "Tu as trouvé le problème",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 91,
+  "fields": {
+    "question": 19,
+    "lettre": "A",
+    "texte": "Un bureau calme",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 92,
+  "fields": {
+    "question": 19,
+    "lettre": "B",
+    "texte": "Un espace pour réfléchir",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 93,
+  "fields": {
+    "question": 19,
+    "lettre": "D",
+    "texte": "Une salle de serveurs",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 94,
+  "fields": {
+    "question": 19,
+    "lettre": "D",
+    "texte": "Un studio créatif",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 95,
+  "fields": {
+    "question": 19,
+    "lettre": "E",
+    "texte": "Un atelier de réparation",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 96,
+  "fields": {
+    "question": 20,
+    "lettre": "A",
+    "texte": "Une imprimante de bureau",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 97,
+  "fields": {
+    "question": 20,
+    "lettre": "B",
+    "texte": "Une calculatrice programmable",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 98,
+  "fields": {
+    "question": 20,
+    "lettre": "C",
+    "texte": "Un routeur",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 99,
+  "fields": {
+    "question": 20,
+    "lettre": "D",
+    "texte": "Un écran tactile",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 100,
+  "fields": {
+    "question": 20,
+    "lettre": "E",
+    "texte": "Un disque dur",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 101,
+  "fields": {
+    "question": 21,
+    "lettre": "A",
+    "texte": "Assistant administratif",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 102,
+  "fields": {
+    "question": 21,
+    "lettre": "B",
+    "texte": "Développeur",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 103,
+  "fields": {
+    "question": 21,
+    "lettre": "C",
+    "texte": "Technicien réseau",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 104,
+  "fields": {
+    "question": 21,
+    "lettre": "D",
+    "texte": "Designer web",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 105,
+  "fields": {
+    "question": 21,
+    "lettre": "E",
+    "texte": "Technicien de maintenance",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 106,
+  "fields": {
+    "question": 22,
+    "lettre": "A",
+    "texte": "Classer des fichiers",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 107,
+  "fields": {
+    "question": 22,
+    "lettre": "B",
+    "texte": "Résoudre un casse-tête",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 108,
+  "fields": {
+    "question": 22,
+    "lettre": "C",
+    "texte": "Configurer un appareil",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 109,
+  "fields": {
+    "question": 22,
+    "lettre": "D",
+    "texte": "Faire une mise en page",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 110,
+  "fields": {
+    "question": 22,
+    "lettre": "E",
+    "texte": "Chercher une panne",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 111,
+  "fields": {
+    "question": 23,
+    "lettre": "A",
+    "texte": "Le suivre étape par étape",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 112,
+  "fields": {
+    "question": 23,
+    "lettre": "B",
+    "texte": "Comprendre la logique derrière chaque étape",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 113,
+  "fields": {
+    "question": 23,
+    "lettre": "C",
+    "texte": "Vérifier les branchements en premier",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 114,
+  "fields": {
+    "question": 23,
+    "lettre": "D",
+    "texte": "Regarder les images avant de lire",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 115,
+  "fields": {
+    "question": 23,
+    "lettre": "E",
+    "texte": "Repérer ce qui pourrait poser problème",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 116,
+  "fields": {
+    "question": 24,
+    "lettre": "A",
+    "texte": "Une faute dans un document",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 117,
+  "fields": {
+    "question": 24,
+    "lettre": "B",
+    "texte": "Un résultat de calcul faux",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 118,
+  "fields": {
+    "question": 24,
+    "lettre": "C",
+    "texte": "Une connexion instable",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 119,
+  "fields": {
+    "question": 24,
+    "lettre": "D",
+    "texte": "Une mise en page qui casse",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 120,
+  "fields": {
+    "question": 24,
+    "lettre": "E",
+    "texte": "Un appareil qui ne s'allume plus",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 121,
+  "fields": {
+    "question": 25,
+    "lettre": "A",
+    "texte": "Excel",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 122,
+  "fields": {
+    "question": 25,
+    "lettre": "B",
+    "texte": "Python",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 123,
+  "fields": {
+    "question": 25,
+    "lettre": "C",
+    "texte": "Un logiciel de gestion de réseau",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 124,
+  "fields": {
+    "question": 25,
+    "lettre": "D",
+    "texte": "Un logiciel de création de web",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 125,
+  "fields": {
+    "question": 25,
+    "lettre": "E",
+    "texte": "Un logiciel de diagnostic PC",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 126,
+  "fields": {
+    "question": 26,
+    "lettre": "A",
+    "texte": "Organisé",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 127,
+  "fields": {
+    "question": 26,
+    "lettre": "B",
+    "texte": "Logique",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 128,
+  "fields": {
+    "question": 26,
+    "lettre": "C",
+    "texte": "Méthodique",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 129,
+  "fields": {
+    "question": 26,
+    "lettre": "D",
+    "texte": "Créatif",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 130,
+  "fields": {
+    "question": 26,
+    "lettre": "E",
+    "texte": "Curieux et patient",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 131,
+  "fields": {
+    "question": 27,
+    "lettre": "A",
+    "texte": "Fermer les documents ouverts",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 132,
+  "fields": {
+    "question": 27,
+    "lettre": "B",
+    "texte": "Chercher quel programme cause le ralentissement",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 133,
+  "fields": {
+    "question": 27,
+    "lettre": "C",
+    "texte": "Vérifier la connexion internet",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 134,
+  "fields": {
+    "question": 27,
+    "lettre": "D",
+    "texte": "Ça ne vous dérange pas",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 135,
+  "fields": {
+    "question": 27,
+    "lettre": "E",
+    "texte": "Ouvrir le gestionnaire des tâches",
+    "formation": 5
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 136,
+  "fields": {
+    "question": 28,
+    "lettre": "A",
+    "texte": "Une astuce bureautique utile",
+    "formation": 1
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 137,
+  "fields": {
+    "question": 28,
+    "lettre": "B",
+    "texte": "Un projet de code que vous avez fait",
+    "formation": 2
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 138,
+  "fields": {
+    "question": 28,
+    "lettre": "C",
+    "texte": "Un astuce de sécurité",
+    "formation": 3
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 139,
+  "fields": {
+    "question": 28,
+    "lettre": "D",
+    "texte": "Un site que vous avez conçu",
+    "formation": 4
+  }
+},
+{
+  "model": "Orientation.reponse",
+  "pk": 140,
+  "fields": {
+    "question": 28,
+    "lettre": "E",
+    "texte": "Une réparation que vous avez réussie",
+    "formation": 5
+  }
+}
+]
