@@ -12,6 +12,7 @@ urlpatterns = [
     path('inscription/', views.inscription, name='inscription'),
     path('inscription/pdf/', generer_pdf_inscription, name='telecharger_pdf_inscription'),
     path('formation/<int:pk>/', views.detail_formation, name='detail_formation'),
+    path('inscription/<int:formation_id>/', views.inscription, name='inscription_avec_formation'),
 ]
 
 

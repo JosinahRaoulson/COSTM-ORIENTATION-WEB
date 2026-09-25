@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #2d3748;
+            margin: 30px;
+            line-height: 1.6;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #3182ce;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            color: #2b6cb0;
+            margin: 0;
+            font-size: 22px;
+        }
+        .content {
+            margin-bottom: 20px;
+        }
+        .info-group {
+            margin-bottom: 12px;
+        }
+        .label {
+            font-weight: bold;
+            color: #4a5568;
+        }
+        .photo-container {
+            float: right;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .photo-container img {
+            width: 120px;
+            height: 150px;
+            object-fit: cover;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Fiche d'Inscription - C.O.S.T.M.</h1>
+        <p>Confirmation d'orientation et d'inscription</p>
+    </div>
+
+    <div class="content">
+        <!-- Affichage de la photo si elle existe -->
+        {% if inscription.photo %}
+        <div class="photo-container">
+            <img src="{{ request.scheme }}://{{ request.get_host }}{{ inscription.photo.url }}" alt="Photo de profil">
+        </div>
+        {% endif %}
+
+        <div class="info-group">
+            <span class="label">Formation choisie :</span> 
+            <span>{{ formation.nom }}</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Nom et Prénom :</span> 
+            <span>{{ inscription.nom }} {{ inscription.prenom }}</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Email :</span> 
+            <span>{{ inscription.email }}</span>
+        </div>
+
+        <div class="info-group">
+            <span class="label">Téléphone :</span> 
+            <span>{{ inscription.telephone }}</span>
+        </div>
+
+        <!-- Ajoute ici les autres champs de ton modèle d'inscription si besoin -->
+    </div>
+
+    <div style="margin-top: 50px; text-align: center; font-size: 12px; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 15px;">
+        <p>Document généré automatiquement par la plateforme C.O.S.T.M.-ORIENTATION.</p>
+    </div>
+
+</body>
+</html>
