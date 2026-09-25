@@ -82,7 +82,7 @@ def generer_pdf_inscription(request):
     return response
 def detail_formation(request, pk):
     try:
-            formation = Formation.objects.get(pk=pk)
-        except Formation.DoesNotExist:
-            formation = None
-        return render(request, 'utilisateur/detail_formation.html', {'formation': formation})
+        formation = Formation.objects.get(pk=pk)
+    except Formation.DoesNotExist:
+        formation = None
+    return render(request, 'utilisateur/detail_formation.html', {'formation': formation})
