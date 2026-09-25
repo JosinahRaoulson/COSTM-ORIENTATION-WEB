@@ -1,0 +1,380 @@
+/* --- Style Global --- */
+body {
+    font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
+    margin: 0;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Barre de navigation --- */
+nav {
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    padding: 12px 30px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4a5568 !important;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #667eea !important;
+}
+
+/* --- Conteneur de page (Carte blanche lisible) --- */
+.page-container {
+    width: 100%;
+    max-width: 850px;
+    background: #ffffff;
+    padding: 45px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+/* --- Titres et paragraphes bien visibles --- */
+h1 {
+    color: #1a202c;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #4a5568; /* Texte sombre et parfaitement lisible sur fond blanc */
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* --- Boutons d'action --- */
+button, .btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 25px rgba(102, 126, 234, 0.6);
+}
+
+/* --- Listes et Cartes de questions --- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f8fafc;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+}
+
+li p {
+    color: #2d3748;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.15rem;
+}
+
+/* --- Choix (Radio buttons) --- */
+label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    background-color: #ffffff;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #4a5568;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+label:hover {
+    background-color: #ebf4ff;
+    border-color: #667eea;
+    color: #5a67d8;
+}
+
+input[type="radio"] {
+    accent-color: #667eea;
+    width: 20px;
+    height: 20px;
+}
+
+/* --- Styles spécifiques pour la page d'accueil --- */
+.hero-banner {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.hero-banner h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.hero-banner p {
+    color: #93c5fd;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.stat-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px 10px;
+    border-radius: 14px;
+}
+
+.stat-card .number {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #1e293b;
+    display: block;
+}
+
+.stat-card .label {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.section-title {
+    color: #1d4ed8;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.feature-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 18px;
+    border-radius: 14px;
+}
+
+.feature-item strong {
+    color: #1e293b;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.feature-item span {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.contact-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 35px;
+}
+
+.contact-box p {
+    margin: 8px 0;
+    color: #334155;
+}
+
+
+/* --- Styles pour le Formulaire d'Inscription --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 8px;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.form-group label:hover {
+    background: transparent;
+    color: #1a202c;
+    transform: none;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #2d3748;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.15);
+}
+
+.radio-group-inline {
+    display: flex;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.radio-group-inline label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.horaires-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.horaire-item {
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #4a5568;
+    transition: all 0.2s ease;
+}
+
+.horaire-item:hover {
+    border-color: #667eea;
+    background: #ebf4ff;
+    color: #5a67d8;
+}
+
+/* --- Styles pour l'en-tête, la photo 4x4 et le tableau de paiement --- */
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    gap: 20px;
+    
+}
+
+.header-logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.photo-box {
+    width: 110px;
+    height: 130px;
+    border: 2px dashed #cbd5e1;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f8fafc;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+.payment-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #f8fafc;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #cbd5e1;
+}
+
+.payment-table th, .payment-table td {
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.payment-table th {
+    background-color: #e2e8f0;
+    color: #1e293b;
+    font-weight: 700;
+}

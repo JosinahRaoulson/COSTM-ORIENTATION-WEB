@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire d'orientation - C.O.S.T.M.</title>
+    <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
+</head>
+<body>
+    <h1>Questionnaire d'orientation</h1>
+    <p>Répondez aux questions ci-dessous pour découvrir quelle formation est faite pour vous.</p>
+
+    <form method="POST">
+    {% csrf_token %}
+    <ul>
+        {% for question in questions %}
+            <li>
+                <p><strong>{{ question.texte }}</strong></p>
+                
+                <!-- Boucle sur les réponses de la question -->
+                {% for reponse in question.reponses.all %}
+                    <label>
+                        <input type="radio" name="question_{{ question.id }}" value="{{ reponse.id }}">
+                        {{ reponse.texte }}
+                    </label><br>
+                {% empty %}
+                    <p>Aucune réponse disponible pour cette question.</p>
+                {% endfor %}
+            </li>
+        {% empty %}
+            <p>Aucune question disponible pour le moment. En attente de la base de données.</p>
+        {% endfor %}
+    </ul>
+    <button type="submit">Valider mes réponses</button>
+</form>
+    
+</body>
+<nav style="background: #e2e8f0; padding: 10px 20px; margin-bottom: 20px; border-radius: 6px;">
+    <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
+    <a href="{% url 'questionnaire' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Questionnaire</a>
+    <a href="{% url 'liste_formations' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
+    <a href="{% url 'inscription' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Inscription</a>
+</nav>
+</html>

@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nos Formations - C.O.S.T.M.</title>
+    <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
+</head>
+<body>
+    <h1>Nos formations informatiques</h1>
+    
+    <ul>
+        {% for formation in formations %}
+            <li>
+                <strong>{{ formation.nom }}</strong>
+                <p>{{ formation.description }}</p>
+            </li>
+        {% empty %}
+            <li>Aucune formation pour le moment.</li>
+        {% endfor %}
+    </ul>
+       
+    
+</body>
+<nav style="background: #e2e8f0; padding: 10px 20px; margin-bottom: 20px; border-radius: 6px;">
+    <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
+    <a href="{% url 'questionnaire' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Questionnaire</a>
+    <a href="{% url 'liste_formations' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
+    <a href="{% url 'inscription' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Inscription</a>
+</nav>
+</html>

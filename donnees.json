@@ -4,31 +4,31 @@
   "pk": 1,
   "fields": {
     "nom": "BUREAUTIQUE",
-    "description": "Le bureautique regroupe l'ensemble des outils informatiques utilisés au quotidien dans un environnement professionnel : traitement de texte, tableurs et logiciels de présentation.\r\nCette formation vous apprend à créer et mettre en forme des documents professionnels ( Lettres, rapports, CV ), à manipuler des tableaux de calcul ( Formules, graphiques, tris et filtres ), et à concevoir des présentations claires et efficaces pour vos réunions ou exposés.\r\nElle est particulièrement adaptée aux personnes qui souhaitent être opérationnelles rapidement dans un poste administratif, ou qui veulent renforcer leurs bases avant de suivre une formation plus technique comme la pré-programmation ou la création de site web."
+    "description": "Le bureautique regroupe l'ensemble des outils informatiques utilisÃ©s au quotidien dans un environnement professionnel : traitement de texte, tableurs et logiciels de prÃ©sentation.\r\nCette formation vous apprend Ã  crÃ©er et mettre en forme des documents professionnels ( Lettres, rapports, CV ), Ã  manipuler des tableaux de calcul ( Formules, graphiques, tris et filtres ), et Ã  concevoir des prÃ©sentations claires et efficaces pour vos rÃ©unions ou exposÃ©s.\r\nElle est particuliÃ¨rement adaptÃ©e aux personnes qui souhaitent Ãªtre opÃ©rationnelles rapidement dans un poste administratif, ou qui veulent renforcer leurs bases avant de suivre une formation plus technique comme la prÃ©-programmation ou la crÃ©ation de site web."
   }
 },
 {
   "model": "Orientation.formation",
   "pk": 2,
   "fields": {
-    "nom": "PRÉ-PROGRAMMATION",
-    "description": "Introduction à la logique de programmation et aux bases du codage.\r\nAvant de se spécialiser dans un langage de programmation précis, cette formation pose les fondations essentielles : comprendre comment un ordinateur exécute des instructions, apprendre à décomposer un problème  en étapes simples, et découvrir les notions de base communes à tous les langages ( variables, conditions, boucles, fonctions ).\r\nÀ travers ces exercices pratiques et progressifs, vous développerez votre logique et votre capacité à résoudre des problèmes de façon structurée - une compétence essentielle pour toute carrière en informatique.\r\nCette formation est le point de départ idéal avant de vous spécialiser en développement web, création de logiciels, ou toute voie technique du numérique."
+    "nom": "PRÃ‰-PROGRAMMATION",
+    "description": "Introduction Ã  la logique de programmation et aux bases du codage.\r\nAvant de se spÃ©cialiser dans un langage de programmation prÃ©cis, cette formation pose les fondations essentielles : comprendre comment un ordinateur exÃ©cute des instructions, apprendre Ã  dÃ©composer un problÃ¨me  en Ã©tapes simples, et dÃ©couvrir les notions de base communes Ã  tous les langages ( variables, conditions, boucles, fonctions ).\r\nÃ€ travers ces exercices pratiques et progressifs, vous dÃ©velopperez votre logique et votre capacitÃ© Ã  rÃ©soudre des problÃ¨mes de faÃ§on structurÃ©e - une compÃ©tence essentielle pour toute carriÃ¨re en informatique.\r\nCette formation est le point de dÃ©part idÃ©al avant de vous spÃ©cialiser en dÃ©veloppement web, crÃ©ation de logiciels, ou toute voie technique du numÃ©rique."
   }
 },
 {
   "model": "Orientation.formation",
   "pk": 3,
   "fields": {
-    "nom": "ADMINISTRATION ET RÉSEAUX INFORMATIQUES",
-    "description": "Cette formation vous initie à l'installation, la configuration et la sécurisation des réseaux informatiques : câblage, configuration de routeurs et switchs, adressage IP, protocole de communication, et bases de la cybersécurité.\r\nVous apprendrez à faire fonctionner plusieurs appareils ensemble au sein d'un même réseau ( ordinateur, imprimantes, serveurs ), à diagnostiquer les pannes de connexion courantes, et à mettre en pace des mesures de protection contre les intrusions.\r\nCette formation convient particulièrement à ceux qui aiment comprendre comment les systèmes communiquent entre eux et qui souhaitent gérer l'infrastructure informatique d'une entreprise, d'une école ou d'une organisation.\r\nDes notions de base en informatique sont recommandées, sans être obligatoires."
+    "nom": "ADMINISTRATION ET RÃ‰SEAUX INFORMATIQUES",
+    "description": "Cette formation vous initie Ã  l'installation, la configuration et la sÃ©curisation des rÃ©seaux informatiques : cÃ¢blage, configuration de routeurs et switchs, adressage IP, protocole de communication, et bases de la cybersÃ©curitÃ©.\r\nVous apprendrez Ã  faire fonctionner plusieurs appareils ensemble au sein d'un mÃªme rÃ©seau ( ordinateur, imprimantes, serveurs ), Ã  diagnostiquer les pannes de connexion courantes, et Ã  mettre en pace des mesures de protection contre les intrusions.\r\nCette formation convient particuliÃ¨rement Ã  ceux qui aiment comprendre comment les systÃ¨mes communiquent entre eux et qui souhaitent gÃ©rer l'infrastructure informatique d'une entreprise, d'une Ã©cole ou d'une organisation.\r\nDes notions de base en informatique sont recommandÃ©es, sans Ãªtre obligatoires."
   }
 },
 {
   "model": "Orientation.formation",
   "pk": 4,
   "fields": {
-    "nom": "CRÉATION DE SITES WEB",
-    "description": "Cette formation vous apprend à concevoir des pages web de A à Z avec les trois langages fondamentaux du développement web : HTML pour la structure, CSS pour l mise en forme visuelle, et JavaScript pour l'interactivité.\r\nVous apprendrez à construire un site vitrine complet - de la première ligne de code jusqu'à la mise en ligne - en respectant les bonnes pratiques de mise en page, de responsive design ( adaptation aux mobiles ) et d'accessibilité.\r\nIdéale pour les personnes créatives qui aiment concevoir des interfaces visuellement soignées, cette formation ouvre la voie vers les métiers de développement Front-end  ou de créateur de contenu web."
+    "nom": "CRÃ‰ATION DE SITES WEB",
+    "description": "Cette formation vous apprend Ã  concevoir des pages web de A Ã  Z avec les trois langages fondamentaux du dÃ©veloppement web : HTML pour la structure, CSS pour l mise en forme visuelle, et JavaScript pour l'interactivitÃ©.\r\nVous apprendrez Ã  construire un site vitrine complet - de la premiÃ¨re ligne de code jusqu'Ã  la mise en ligne - en respectant les bonnes pratiques de mise en page, de responsive design ( adaptation aux mobiles ) et d'accessibilitÃ©.\r\nIdÃ©ale pour les personnes crÃ©atives qui aiment concevoir des interfaces visuellement soignÃ©es, cette formation ouvre la voie vers les mÃ©tiers de dÃ©veloppement Front-end  ou de crÃ©ateur de contenu web."
   }
 },
 {
@@ -36,7 +36,7 @@
   "pk": 5,
   "fields": {
     "nom": "MAINTENANCE INFORMATIQUE",
-    "description": "Cette formation forme aux compétences essentielles du diagnostic, du dépannage et de l'optimisation des ordinateurs : identification de pannes matérielles et logicielles, remplacement de composants, nettoyage et optimisation des performances, réinstallation de systèmes d'exploitation.\r\nVous apprendrez une méthode rigoureuse pour identifier l'origine d'un problème informatique et le résoudre efficacement, que ce soit sur un ordinateur personnel ou dans le cadre de la gestion d'un parc informatique en entreprise.\r\nCette formation convient aux personnes qui aiment comprendre le fonctionnement concret des machines et qui trouvent satisfaisant de réparer ce qui ne fonctionne pas."
+    "description": "Cette formation forme aux compÃ©tences essentielles du diagnostic, du dÃ©pannage et de l'optimisation des ordinateurs : identification de pannes matÃ©rielles et logicielles, remplacement de composants, nettoyage et optimisation des performances, rÃ©installation de systÃ¨mes d'exploitation.\r\nVous apprendrez une mÃ©thode rigoureuse pour identifier l'origine d'un problÃ¨me informatique et le rÃ©soudre efficacement, que ce soit sur un ordinateur personnel ou dans le cadre de la gestion d'un parc informatique en entreprise.\r\nCette formation convient aux personnes qui aiment comprendre le fonctionnement concret des machines et qui trouvent satisfaisant de rÃ©parer ce qui ne fonctionne pas."
   }
 },
 {
@@ -59,7 +59,7 @@
   "model": "Orientation.question",
   "pk": 3,
   "fields": {
-    "texte": "Lorsque vous découvrez un nouvel outil, que faites-vous généralement en premier ?",
+    "texte": "Lorsque vous dÃ©couvrez un nouvel outil, que faites-vous gÃ©nÃ©ralement en premier ?",
     "ordre": 3
   }
 },
@@ -75,7 +75,7 @@
   "model": "Orientation.question",
   "pk": 5,
   "fields": {
-    "texte": "Dans un travail de groupe, quel rôle préférez-vous  prendre ?",
+    "texte": "Dans un travail de groupe, quel rÃ´le prÃ©fÃ©rez-vous  prendre ?",
     "ordre": 5
   }
 },
@@ -91,7 +91,7 @@
   "model": "Orientation.question",
   "pk": 7,
   "fields": {
-    "texte": "Quelle compétence aimeriez-vous développer en priorité ?",
+    "texte": "Quelle compÃ©tence aimeriez-vous dÃ©velopper en prioritÃ© ?",
     "ordre": 7
   }
 },
@@ -107,7 +107,7 @@
   "model": "Orientation.question",
   "pk": 9,
   "fields": {
-    "texte": "Quel résultat aimeriez-vous pouvoir montrer à la fin de votre formation ?",
+    "texte": "Quel rÃ©sultat aimeriez-vous pouvoir montrer Ã  la fin de votre formation ?",
     "ordre": 9
   }
 },
@@ -115,7 +115,7 @@
   "model": "Orientation.question",
   "pk": 10,
   "fields": {
-    "texte": "Après votre formation, que voudriez-vous surtout être capable de dire ?",
+    "texte": "AprÃ¨s votre formation, que voudriez-vous surtout Ãªtre capable de dire ?",
     "ordre": 10
   }
 },
@@ -139,7 +139,7 @@
   "model": "Orientation.question",
   "pk": 13,
   "fields": {
-    "texte": "Quelle vidéo regarderiez-vous par curiosité ?",
+    "texte": "Quelle vidÃ©o regarderiez-vous par curiositÃ© ?",
     "ordre": 13
   }
 },
@@ -187,7 +187,7 @@
   "model": "Orientation.question",
   "pk": 19,
   "fields": {
-    "texte": "Quelle ambiance de travail préférez-vous ?",
+    "texte": "Quelle ambiance de travail prÃ©fÃ©rez-vous ?",
     "ordre": 19
   }
 },
@@ -195,7 +195,7 @@
   "model": "Orientation.question",
   "pk": 20,
   "fields": {
-    "texte": "Quel objet vous intéresserait le plus ?",
+    "texte": "Quel objet vous intÃ©resserait le plus ?",
     "ordre": 20
   }
 },
@@ -211,7 +211,7 @@
   "model": "Orientation.question",
   "pk": 22,
   "fields": {
-    "texte": "Quelle activité vous ennuierait le moins ?",
+    "texte": "Quelle activitÃ© vous ennuierait le moins ?",
     "ordre": 22
   }
 },
@@ -219,7 +219,7 @@
   "model": "Orientation.question",
   "pk": 23,
   "fields": {
-    "texte": "Face un mode d'emploi, vous préférez.......",
+    "texte": "Face un mode d'emploi, vous prÃ©fÃ©rez.......",
     "ordre": 23
   }
 },
@@ -235,7 +235,7 @@
   "model": "Orientation.question",
   "pk": 25,
   "fields": {
-    "texte": "Quel outil aimeriez-vous maîtriser parfaitement ?",
+    "texte": "Quel outil aimeriez-vous maÃ®triser parfaitement ?",
     "ordre": 25
   }
 },
@@ -243,7 +243,7 @@
   "model": "Orientation.question",
   "pk": 26,
   "fields": {
-    "texte": "Comment décririez vous votre esprit ?",
+    "texte": "Comment dÃ©cririez vous votre esprit ?",
     "ordre": 26
   }
 },
@@ -251,7 +251,7 @@
   "model": "Orientation.question",
   "pk": 27,
   "fields": {
-    "texte": "Quel serait votre premier réflexe face à un ordinateur lent ?",
+    "texte": "Quel serait votre premier rÃ©flexe face Ã  un ordinateur lent ?",
     "ordre": 27
   }
 },
@@ -259,7 +259,7 @@
   "model": "Orientation.question",
   "pk": 28,
   "fields": {
-    "texte": "Quel type de contenu partageriez vous sur les réseaux ?",
+    "texte": "Quel type de contenu partageriez vous sur les rÃ©seaux ?",
     "ordre": 28
   }
 },
@@ -276,7 +276,7 @@
   "fields": {
     "question": 1,
     "lettre": "A",
-    "texte": "Je n'ai jamais utilisé un ordinateur.",
+    "texte": "Je n'ai jamais utilisÃ© un ordinateur.",
     "formation": 1
   }
 },
@@ -306,7 +306,7 @@
   "fields": {
     "question": 1,
     "lettre": "C",
-    "texte": "J'ai des connaissances sur le fonctionnement des réseaux informatiques réseaux.",
+    "texte": "J'ai des connaissances sur le fonctionnement des rÃ©seaux informatiques rÃ©seaux.",
     "formation": 3
   }
 },
@@ -316,7 +316,7 @@
   "fields": {
     "question": 1,
     "lettre": "E",
-    "texte": "Je peux résoudre des problèmes informatiques comme le dépannage.",
+    "texte": "Je peux rÃ©soudre des problÃ¨mes informatiques comme le dÃ©pannage.",
     "formation": 5
   }
 },
@@ -326,7 +326,7 @@
   "fields": {
     "question": 2,
     "lettre": "A",
-    "texte": "Être  plus efficace dans mes études et mon travail.",
+    "texte": "ÃŠtre  plus efficace dans mes Ã©tudes et mon travail.",
     "formation": 1
   }
 },
@@ -336,7 +336,7 @@
   "fields": {
     "question": 2,
     "lettre": "B",
-    "texte": "Acquérir  une nouvelle compétence professionnelle.",
+    "texte": "AcquÃ©rir  une nouvelle compÃ©tence professionnelle.",
     "formation": 2
   }
 },
@@ -346,7 +346,7 @@
   "fields": {
     "question": 2,
     "lettre": "C",
-    "texte": "Mieux comprendre les outils numériques.",
+    "texte": "Mieux comprendre les outils numÃ©riques.",
     "formation": 3
   }
 },
@@ -356,7 +356,7 @@
   "fields": {
     "question": 2,
     "lettre": "D",
-    "texte": "Créer mes propres projets.",
+    "texte": "CrÃ©er mes propres projets.",
     "formation": 4
   }
 },
@@ -366,7 +366,7 @@
   "fields": {
     "question": 2,
     "lettre": "E",
-    "texte": "Vérifier ou remettre en état un appareil.",
+    "texte": "VÃ©rifier ou remettre en Ã©tat un appareil.",
     "formation": 5
   }
 },
@@ -396,7 +396,7 @@
   "fields": {
     "question": 3,
     "lettre": "C",
-    "texte": "Je demande des explications à quelqu'un.",
+    "texte": "Je demande des explications Ã  quelqu'un.",
     "formation": 3
   }
 },
@@ -406,7 +406,7 @@
   "fields": {
     "question": 3,
     "lettre": "D",
-    "texte": "Je commence directement à créer quelque chose.",
+    "texte": "Je commence directement Ã  crÃ©er quelque chose.",
     "formation": 4
   }
 },
@@ -416,7 +416,7 @@
   "fields": {
     "question": 3,
     "lettre": "E",
-    "texte": "Je regarde les réglages et les éléments techniques.",
+    "texte": "Je regarde les rÃ©glages et les Ã©lÃ©ments techniques.",
     "formation": 5
   }
 },
@@ -426,7 +426,7 @@
   "fields": {
     "question": 4,
     "lettre": "A",
-    "texte": "Avoir un travail bien organisé et bien présenté.",
+    "texte": "Avoir un travail bien organisÃ© et bien prÃ©sentÃ©.",
     "formation": 1
   }
 },
@@ -436,7 +436,7 @@
   "fields": {
     "question": 4,
     "lettre": "B",
-    "texte": "Trouver une solution à une difficulté.",
+    "texte": "Trouver une solution Ã  une difficultÃ©.",
     "formation": 2
   }
 },
@@ -446,7 +446,7 @@
   "fields": {
     "question": 4,
     "lettre": "C",
-    "texte": "Faire fonctionner plusieurs éléments ensemble.",
+    "texte": "Faire fonctionner plusieurs Ã©lÃ©ments ensemble.",
     "formation": 3
   }
 },
@@ -456,7 +456,7 @@
   "fields": {
     "question": 4,
     "lettre": "D",
-    "texte": "Voir une idée personnelle prendre forme.",
+    "texte": "Voir une idÃ©e personnelle prendre forme.",
     "formation": 4
   }
 },
@@ -466,7 +466,7 @@
   "fields": {
     "question": 4,
     "lettre": "E",
-    "texte": "Réussir à réparer quelque chose qui ne fonctionnait pas.",
+    "texte": "RÃ©ussir Ã  rÃ©parer quelque chose qui ne fonctionnait pas.",
     "formation": 5
   }
 },
@@ -476,7 +476,7 @@
   "fields": {
     "question": 5,
     "lettre": "A",
-    "texte": "Organiser les informations et préparer les documents.",
+    "texte": "Organiser les informations et prÃ©parer les documents.",
     "formation": 1
   }
 },
@@ -486,7 +486,7 @@
   "fields": {
     "question": 5,
     "lettre": "B",
-    "texte": "Réfléchir aux problèmes et proposer des solutions;",
+    "texte": "RÃ©flÃ©chir aux problÃ¨mes et proposer des solutions;",
     "formation": 2
   }
 },
@@ -496,7 +496,7 @@
   "fields": {
     "question": 5,
     "lettre": "C",
-    "texte": "Faciliter les échanges et la communication.",
+    "texte": "Faciliter les Ã©changes et la communication.",
     "formation": 3
   }
 },
@@ -506,7 +506,7 @@
   "fields": {
     "question": 5,
     "lettre": "D",
-    "texte": "Imaginer la présentation ou le résultat final.",
+    "texte": "Imaginer la prÃ©sentation ou le rÃ©sultat final.",
     "formation": 4
   }
 },
@@ -516,7 +516,7 @@
   "fields": {
     "question": 5,
     "lettre": "E",
-    "texte": "Vérifier les détails et résoudre les difficultés pratiques.",
+    "texte": "VÃ©rifier les dÃ©tails et rÃ©soudre les difficultÃ©s pratiques.",
     "formation": 5
   }
 },
@@ -536,7 +536,7 @@
   "fields": {
     "question": 6,
     "lettre": "B",
-    "texte": "Un espace ou je peux réfléchir et développer des solutions.",
+    "texte": "Un espace ou je peux rÃ©flÃ©chir et dÃ©velopper des solutions.",
     "formation": 2
   }
 },
@@ -546,7 +546,7 @@
   "fields": {
     "question": 6,
     "lettre": "C",
-    "texte": "Un environnement avec des équipements et des systèmes connectés.",
+    "texte": "Un environnement avec des Ã©quipements et des systÃ¨mes connectÃ©s.",
     "formation": 3
   }
 },
@@ -556,7 +556,7 @@
   "fields": {
     "question": 6,
     "lettre": "D",
-    "texte": "Un espace de création et de conception.",
+    "texte": "Un espace de crÃ©ation et de conception.",
     "formation": 4
   }
 },
@@ -566,7 +566,7 @@
   "fields": {
     "question": 6,
     "lettre": "E",
-    "texte": "Un atelier ou espace de dépannage.",
+    "texte": "Un atelier ou espace de dÃ©pannage.",
     "formation": 5
   }
 },
@@ -576,7 +576,7 @@
   "fields": {
     "question": 7,
     "lettre": "A",
-    "texte": "Mieux organiser et présenter des informations.",
+    "texte": "Mieux organiser et prÃ©senter des informations.",
     "formation": 1
   }
 },
@@ -586,7 +586,7 @@
   "fields": {
     "question": 7,
     "lettre": "B",
-    "texte": "Développer ma logique et ma capacité à résoudre des problèmes.",
+    "texte": "DÃ©velopper ma logique et ma capacitÃ© Ã  rÃ©soudre des problÃ¨mes.",
     "formation": 2
   }
 },
@@ -596,7 +596,7 @@
   "fields": {
     "question": 7,
     "lettre": "C",
-    "texte": "Comprendre les connexions et la sécurité informatique.",
+    "texte": "Comprendre les connexions et la sÃ©curitÃ© informatique.",
     "formation": 3
   }
 },
@@ -606,7 +606,7 @@
   "fields": {
     "question": 7,
     "lettre": "D",
-    "texte": "Développer ma créativité numérique.",
+    "texte": "DÃ©velopper ma crÃ©ativitÃ© numÃ©rique.",
     "formation": 4
   }
 },
@@ -616,7 +616,7 @@
   "fields": {
     "question": 7,
     "lettre": "E",
-    "texte": "Développer mes capacités diagnostic et de réparation.",
+    "texte": "DÃ©velopper mes capacitÃ©s diagnostic et de rÃ©paration.",
     "formation": 5
   }
 },
@@ -626,7 +626,7 @@
   "fields": {
     "question": 8,
     "lettre": "A",
-    "texte": "J'aime quand les choses sont bien organisées",
+    "texte": "J'aime quand les choses sont bien organisÃ©es",
     "formation": 1
   }
 },
@@ -646,7 +646,7 @@
   "fields": {
     "question": 8,
     "lettre": "C",
-    "texte": "J'aime comprendre comment les éléments communiquent entre eux.",
+    "texte": "J'aime comprendre comment les Ã©lÃ©ments communiquent entre eux.",
     "formation": 3
   }
 },
@@ -656,7 +656,7 @@
   "fields": {
     "question": 8,
     "lettre": "D",
-    "texte": "J'aime transformer les idées en réalisation.",
+    "texte": "J'aime transformer les idÃ©es en rÃ©alisation.",
     "formation": 4
   }
 },
@@ -696,7 +696,7 @@
   "fields": {
     "question": 9,
     "lettre": "C",
-    "texte": "Un réseau correctement installé.",
+    "texte": "Un rÃ©seau correctement installÃ©.",
     "formation": 3
   }
 },
@@ -716,7 +716,7 @@
   "fields": {
     "question": 9,
     "lettre": "E",
-    "texte": "Un ordinateur réparé ou optimisé.",
+    "texte": "Un ordinateur rÃ©parÃ© ou optimisÃ©.",
     "formation": 5
   }
 },
@@ -726,7 +726,7 @@
   "fields": {
     "question": 10,
     "lettre": "A",
-    "texte": "Je maîtrise mieux les outils de travail numérique.",
+    "texte": "Je maÃ®trise mieux les outils de travail numÃ©rique.",
     "formation": 1
   }
 },
@@ -736,7 +736,7 @@
   "fields": {
     "question": 10,
     "lettre": "B",
-    "texte": "Je sais comprendre et créer des programmes.",
+    "texte": "Je sais comprendre et crÃ©er des programmes.",
     "formation": 2
   }
 },
@@ -746,7 +746,7 @@
   "fields": {
     "question": 10,
     "lettre": "C",
-    "texte": "JE sais installer et gérer un réseau.",
+    "texte": "JE sais installer et gÃ©rer un rÃ©seau.",
     "formation": 3
   }
 },
@@ -756,7 +756,7 @@
   "fields": {
     "question": 10,
     "lettre": "D",
-    "texte": "Je suis capable de créer un site web.",
+    "texte": "Je suis capable de crÃ©er un site web.",
     "formation": 4
   }
 },
@@ -766,7 +766,7 @@
   "fields": {
     "question": 10,
     "lettre": "E",
-    "texte": "Je peux résoudre des problèmes informatiques.",
+    "texte": "Je peux rÃ©soudre des problÃ¨mes informatiques.",
     "formation": 5
   }
 },
@@ -796,7 +796,7 @@
   "fields": {
     "question": 11,
     "lettre": "C",
-    "texte": "Un outil réseau",
+    "texte": "Un outil rÃ©seau",
     "formation": 3
   }
 },
@@ -806,7 +806,7 @@
   "fields": {
     "question": 11,
     "lettre": "D",
-    "texte": "Un éditeur de web",
+    "texte": "Un Ã©diteur de web",
     "formation": 4
   }
 },
@@ -826,7 +826,7 @@
   "fields": {
     "question": 12,
     "lettre": "A",
-    "texte": "Un document mal présenté.",
+    "texte": "Un document mal prÃ©sentÃ©.",
     "formation": 1
   }
 },
@@ -836,7 +836,7 @@
   "fields": {
     "question": 12,
     "lettre": "B",
-    "texte": "Un problème sans logique.",
+    "texte": "Un problÃ¨me sans logique.",
     "formation": 2
   }
 },
@@ -856,7 +856,7 @@
   "fields": {
     "question": 12,
     "lettre": "D",
-    "texte": "Un rendu visuel raté.",
+    "texte": "Un rendu visuel ratÃ©.",
     "formation": 4
   }
 },
@@ -896,7 +896,7 @@
   "fields": {
     "question": 13,
     "lettre": "C",
-    "texte": "Comment fonctionne un réseau.",
+    "texte": "Comment fonctionne un rÃ©seau.",
     "formation": 3
   }
 },
@@ -906,7 +906,7 @@
   "fields": {
     "question": 13,
     "lettre": "D",
-    "texte": "Comment créer un site web.",
+    "texte": "Comment crÃ©er un site web.",
     "formation": 4
   }
 },
@@ -916,7 +916,7 @@
   "fields": {
     "question": 13,
     "lettre": "E",
-    "texte": "Comment réparer un PC.",
+    "texte": "Comment rÃ©parer un PC.",
     "formation": 5
   }
 },
@@ -926,7 +926,7 @@
   "fields": {
     "question": 14,
     "lettre": "A",
-    "texte": "Gérer des documents d'entreprise",
+    "texte": "GÃ©rer des documents d'entreprise",
     "formation": 1
   }
 },
@@ -936,7 +936,7 @@
   "fields": {
     "question": 14,
     "lettre": "B",
-    "texte": "Développer une application",
+    "texte": "DÃ©velopper une application",
     "formation": 2
   }
 },
@@ -946,7 +946,7 @@
   "fields": {
     "question": 14,
     "lettre": "C",
-    "texte": "Sécuriser un réseau",
+    "texte": "SÃ©curiser un rÃ©seau",
     "formation": 3
   }
 },
@@ -1036,7 +1036,7 @@
   "fields": {
     "question": 16,
     "lettre": "B",
-    "texte": "Vous cherchez la logique du problème.",
+    "texte": "Vous cherchez la logique du problÃ¨me.",
     "formation": 2
   }
 },
@@ -1046,7 +1046,7 @@
   "fields": {
     "question": 16,
     "lettre": "C",
-    "texte": "Vous vérifiez le routeur.",
+    "texte": "Vous vÃ©rifiez le routeur.",
     "formation": 3
   }
 },
@@ -1056,7 +1056,7 @@
   "fields": {
     "question": 16,
     "lettre": "D",
-    "texte": "ça ne vous dérange pas.",
+    "texte": "Ã§a ne vous dÃ©range pas.",
     "formation": 4
   }
 },
@@ -1066,7 +1066,7 @@
   "fields": {
     "question": 16,
     "lettre": "E",
-    "texte": "Vous redémarrez tout un par un.",
+    "texte": "Vous redÃ©marrez tout un par un.",
     "formation": 5
   }
 },
@@ -1076,7 +1076,7 @@
   "fields": {
     "question": 17,
     "lettre": "A",
-    "texte": "Suivre une secrétaire",
+    "texte": "Suivre une secrÃ©taire",
     "formation": 1
   }
 },
@@ -1086,7 +1086,7 @@
   "fields": {
     "question": 17,
     "lettre": "B",
-    "texte": "Suivre un développeur",
+    "texte": "Suivre un dÃ©veloppeur",
     "formation": 2
   }
 },
@@ -1096,7 +1096,7 @@
   "fields": {
     "question": 17,
     "lettre": "C",
-    "texte": "Suivre un technicien réseau",
+    "texte": "Suivre un technicien rÃ©seau",
     "formation": 3
   }
 },
@@ -1116,7 +1116,7 @@
   "fields": {
     "question": 17,
     "lettre": "E",
-    "texte": "Suivre un réparateur",
+    "texte": "Suivre un rÃ©parateur",
     "formation": 5
   }
 },
@@ -1126,7 +1126,7 @@
   "fields": {
     "question": 18,
     "lettre": "A",
-    "texte": "C'est bien organisé",
+    "texte": "C'est bien organisÃ©",
     "formation": 1
   }
 },
@@ -1156,7 +1156,7 @@
   "fields": {
     "question": 18,
     "lettre": "D",
-    "texte": "C'est beau et sophistiqué",
+    "texte": "C'est beau et sophistiquÃ©",
     "formation": 4
   }
 },
@@ -1166,7 +1166,7 @@
   "fields": {
     "question": 18,
     "lettre": "E",
-    "texte": "Tu as trouvé le problème",
+    "texte": "Tu as trouvÃ© le problÃ¨me",
     "formation": 5
   }
 },
@@ -1186,7 +1186,7 @@
   "fields": {
     "question": 19,
     "lettre": "B",
-    "texte": "Un espace pour réfléchir",
+    "texte": "Un espace pour rÃ©flÃ©chir",
     "formation": 2
   }
 },
@@ -1206,7 +1206,7 @@
   "fields": {
     "question": 19,
     "lettre": "D",
-    "texte": "Un studio créatif",
+    "texte": "Un studio crÃ©atif",
     "formation": 4
   }
 },
@@ -1216,7 +1216,7 @@
   "fields": {
     "question": 19,
     "lettre": "E",
-    "texte": "Un atelier de réparation",
+    "texte": "Un atelier de rÃ©paration",
     "formation": 5
   }
 },
@@ -1256,7 +1256,7 @@
   "fields": {
     "question": 20,
     "lettre": "D",
-    "texte": "Un écran tactile",
+    "texte": "Un Ã©cran tactile",
     "formation": 4
   }
 },
@@ -1286,7 +1286,7 @@
   "fields": {
     "question": 21,
     "lettre": "B",
-    "texte": "Développeur",
+    "texte": "DÃ©veloppeur",
     "formation": 2
   }
 },
@@ -1296,7 +1296,7 @@
   "fields": {
     "question": 21,
     "lettre": "C",
-    "texte": "Technicien réseau",
+    "texte": "Technicien rÃ©seau",
     "formation": 3
   }
 },
@@ -1336,7 +1336,7 @@
   "fields": {
     "question": 22,
     "lettre": "B",
-    "texte": "Résoudre un casse-tête",
+    "texte": "RÃ©soudre un casse-tÃªte",
     "formation": 2
   }
 },
@@ -1376,7 +1376,7 @@
   "fields": {
     "question": 23,
     "lettre": "A",
-    "texte": "Le suivre étape par étape",
+    "texte": "Le suivre Ã©tape par Ã©tape",
     "formation": 1
   }
 },
@@ -1386,7 +1386,7 @@
   "fields": {
     "question": 23,
     "lettre": "B",
-    "texte": "Comprendre la logique derrière chaque étape",
+    "texte": "Comprendre la logique derriÃ¨re chaque Ã©tape",
     "formation": 2
   }
 },
@@ -1396,7 +1396,7 @@
   "fields": {
     "question": 23,
     "lettre": "C",
-    "texte": "Vérifier les branchements en premier",
+    "texte": "VÃ©rifier les branchements en premier",
     "formation": 3
   }
 },
@@ -1416,7 +1416,7 @@
   "fields": {
     "question": 23,
     "lettre": "E",
-    "texte": "Repérer ce qui pourrait poser problème",
+    "texte": "RepÃ©rer ce qui pourrait poser problÃ¨me",
     "formation": 5
   }
 },
@@ -1436,7 +1436,7 @@
   "fields": {
     "question": 24,
     "lettre": "B",
-    "texte": "Un résultat de calcul faux",
+    "texte": "Un rÃ©sultat de calcul faux",
     "formation": 2
   }
 },
@@ -1496,7 +1496,7 @@
   "fields": {
     "question": 25,
     "lettre": "C",
-    "texte": "Un logiciel de gestion de réseau",
+    "texte": "Un logiciel de gestion de rÃ©seau",
     "formation": 3
   }
 },
@@ -1506,7 +1506,7 @@
   "fields": {
     "question": 25,
     "lettre": "D",
-    "texte": "Un logiciel de création de web",
+    "texte": "Un logiciel de crÃ©ation de web",
     "formation": 4
   }
 },
@@ -1526,7 +1526,7 @@
   "fields": {
     "question": 26,
     "lettre": "A",
-    "texte": "Organisé",
+    "texte": "OrganisÃ©",
     "formation": 1
   }
 },
@@ -1546,7 +1546,7 @@
   "fields": {
     "question": 26,
     "lettre": "C",
-    "texte": "Méthodique",
+    "texte": "MÃ©thodique",
     "formation": 3
   }
 },
@@ -1556,7 +1556,7 @@
   "fields": {
     "question": 26,
     "lettre": "D",
-    "texte": "Créatif",
+    "texte": "CrÃ©atif",
     "formation": 4
   }
 },
@@ -1596,7 +1596,7 @@
   "fields": {
     "question": 27,
     "lettre": "C",
-    "texte": "Vérifier la connexion internet",
+    "texte": "VÃ©rifier la connexion internet",
     "formation": 3
   }
 },
@@ -1606,7 +1606,7 @@
   "fields": {
     "question": 27,
     "lettre": "D",
-    "texte": "Ça ne vous dérange pas",
+    "texte": "Ã‡a ne vous dÃ©range pas",
     "formation": 4
   }
 },
@@ -1616,7 +1616,7 @@
   "fields": {
     "question": 27,
     "lettre": "E",
-    "texte": "Ouvrir le gestionnaire des tâches",
+    "texte": "Ouvrir le gestionnaire des tÃ¢ches",
     "formation": 5
   }
 },
@@ -1646,7 +1646,7 @@
   "fields": {
     "question": 28,
     "lettre": "C",
-    "texte": "Un astuce de sécurité",
+    "texte": "Un astuce de sÃ©curitÃ©",
     "formation": 3
   }
 },
@@ -1656,7 +1656,7 @@
   "fields": {
     "question": 28,
     "lettre": "D",
-    "texte": "Un site que vous avez conçu",
+    "texte": "Un site que vous avez conÃ§u",
     "formation": 4
   }
 },
@@ -1666,7 +1666,7 @@
   "fields": {
     "question": 28,
     "lettre": "E",
-    "texte": "Une réparation que vous avez réussie",
+    "texte": "Une rÃ©paration que vous avez rÃ©ussie",
     "formation": 5
   }
 }

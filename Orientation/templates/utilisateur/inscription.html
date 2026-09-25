@@ -1,0 +1,177 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Fiche d'Inscription - C.O.S.T.M. Toliara</title>
+    <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
+</head>
+<body>
+
+    
+
+    <!-- Conteneur principal -->
+    <div class="page-container">
+        
+        <!-- En-tête avec Logo/Illustration à gauche et Cadre Photo 4x4 à droite -->
+        <div class="header-top">
+            <div class="header-logo-area">
+                <!-- Tu pourras remplacer l'image par ton logo réel dans static/utilisateur/images/ -->
+                <div>
+                    <span style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #64748b; font-weight: 700; display: block;">CENTRE D'ORIENTATION DE SYSTÈME ET TECHNOLOGIE MODERNE</span>
+                    <span style="font-size: 1.85rem; color: #2563eb; font-weight: 700; text-align: center;">- C.O.S.T.M. -</span>
+                    <h1 style="margin-top: 5px; color: #1e293b; font-size: 1.8rem;">FICHE D'INSCRIPTION</h1>
+                </div>
+            </div>
+
+            <!-- Cadre Photo 4x4 -->
+             <label for="file-photo" style="cursor: pointer; display: inline-block;">
+            <div class="photo-box">
+                <span>📸</span>
+                <span style="margin-top: 5px; font-weight: 600;">4 x 4</span>
+            </div>
+        </div>
+        <input type="file" name="Photo" id="file-photo" accept="image/*" style="display: none;">
+        </label>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+
+            <!-- N° d'inscription et Date -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="num_inscription">N° d'inscription :</label>
+                    <input type="text" id="num_inscription" name="num_inscription" class="form-control" placeholder="Ex: 001/2026">
+                </div>
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label for="date_jour">Date du :</label>
+                    <input type="date" id="date_jour" name="date_jour" class="form-control" required>
+                </div>
+            </div>
+
+            <!-- Civilité -->
+            <div class="form-group">
+                <label>Civilité :</label>
+                <div class="radio-group-inline">
+                    <label><input type="radio" name="civilite" value="M" required> M.</label>
+                    <label><input type="radio" name="civilite" value="Mme"> Mme</label>
+                    <label><input type="radio" name="civilite" value="Mlle"> Mlle</label>
+                </div>
+            </div>
+
+            <!-- Nom et Prénom -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                    <label for="nom">Nom :</label>
+                    <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Votre prénom">
+                </div>
+            </div>
+
+            <!-- Date et Lieu de naissance -->
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                <div class="form-group">
+                    <label for="date_naissance">Né(e) le :</label>
+                    <input type="date" id="date_naissance" name="date_naissance" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="lieu_naissance">À :</label>
+                    <input type="text" id="lieu_naissance" name="lieu_naissance" class="form-control" placeholder="Lieu de naissance" required>
+                </div>
+            </div>
+
+            <!-- Domicile -->
+            <div class="form-group">
+                <label for="domicile">Domicile à :</label>
+                <input type="text" id="domicile" name="domicile" class="form-control" placeholder="Votre quartier / adresse à Toliara" required>
+            </div>
+
+            <!-- Numéros de téléphone -->
+            <h3 style="font-size: 1.1rem; color: #1e293b; margin-top: 25px; margin-bottom: 15px;">Numéros de téléphone</h3>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+                <div class="form-group">
+                    <label for="tel_telma">Telma :</label>
+                    <input type="tel" id="tel_telma" name="tel_telma" class="form-control" placeholder="034 XX XXX XX">
+                </div>
+                <div class="form-group">
+                    <label for="tel_orange">Orange :</label>
+                    <input type="tel" id="tel_orange" name="tel_orange" class="form-control" placeholder="032 XX XXX XX">
+                </div>
+                <div class="form-group">
+                    <label for="tel_airtel">Airtel :</label>
+                    <input type="tel" id="tel_airtel" name="tel_airtel" class="form-control" placeholder="033 XX XXX XX">
+                </div>
+            </div>
+
+            <!-- E-mail -->
+            <div class="form-group">
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="exemple@gmail.com">
+            </div>
+
+            
+            
+
+            <!-- Choix des horaires -->
+            <div class="form-group" style="margin-top: 30px;">
+                <label style="font-size: 1.1rem; color: #1e293b; margin-bottom: 12px;">Et heure(s) auquel(s) vous souhaitez :</label>
+                <div class="horaires-grid">
+                    <label class="horaire-item"><input type="checkbox" name="horaires" value="08h00-09h30"> 08h00 à 09h30</label>
+                    <label class="horaire-item"><input type="checkbox" name="horaires" value="09h30-11h30"> 09h30 à 11h30</label>
+                    <label class="horaire-item"><input type="checkbox" name="horaires" value="14h30-16h00"> 14h30 à 16h00</label>
+                    <label class="horaire-item"><input type="checkbox" name="horaires" value="16h00-17h30"> 16h00 à 17h30</label>
+                    <label class="horaire-item" style="grid-column: span 2;"><input type="checkbox" name="horaires" value="17h30-19h00"> 17h30 à 19h00</label>
+                </div>
+            </div>
+
+            <!-- MODE DE PAYEMENT (Tableau) -->
+            <div class="form-group" style="margin-top: 35px;">
+                <label style="font-size: 1.1rem; color: #1e293b; margin-bottom: 10px; text-transform: uppercase; font-weight: 700;">Mode de payement</label>
+                <table class="payment-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Montant</th>
+                            <th>Émargement</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="date_paiement_1" placeholder="jj/mm/aaaa" style="border: none; background: transparent; width: 100%; text-align: center;" ></td>
+                            <td><input type="text" name="montant_1" placeholder="Montant" style="border: none; background: transparent; width: 100%; text-align: center;" ></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="date_paiement_2" placeholder="jj/mm/aaaa" style="border: none; background: transparent; width: 100%; text-align: center;" ></td>
+                            <td><input type="text" name="montant_2" placeholder="Montant" style="border: none; background: transparent; width: 100%; text-align: center;" ></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Bouton de validation -->
+            <div style="text-align: center; margin-top: 40px;">
+                <button type="submit" class="btn" style="width: 100%; padding: 16px; font-size: 1.1rem;">Valider l'inscription 🚀</button>
+            </div>
+            <a href="{% url 'telecharger_pdf_inscription' %}" target="_blank" style="display: block; width: 100%; max-width: 400px; margin: 15px auto 0 auto; padding: 12px 20px; background-color: #312e81; color: white; text-align: center; text-decoration: none; border-radius: 8px; font-weight: 500; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: background 0.3s;">
+                📥 Télécharger la fiche d'inscription en PDF
+            </a>
+        </form>
+
+    </div>
+
+  
+
+</body>
+<nav style="background: #e2e8f0; padding: 10px 20px; margin-bottom: 20px; border-radius: 6px;">
+    <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
+    <a href="{% url 'questionnaire' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Questionnaire</a>
+    <a href="{% url 'liste_formations' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
+    <a href="{% url 'inscription' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Inscription</a>
+</nav>
+</html>
+

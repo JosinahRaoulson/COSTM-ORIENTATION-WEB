@@ -1,35 +1,88 @@
+from django.shortcuts import render
+from .models import Formation
+from .models import Question
 from django.shortcuts import render, redirect
-from .forms import QuestionnaireForm
-from .models import Reponse, Formation
+from .models import Question, Reponse, Formation
 
-def questionnaire_view(request):
+def accueil_utilisateur(request):
+    return render(request, 'utilisateur/accueil.html')
+
+def liste_formations(request):
+    formations = Formation.objects.all()
+    return render(request, 'utilisateur/formations.html', {'formations': formations})
+
+
+def questionnaire(request):
     if request.method == 'POST':
-        form = QuestionnaireForm(request.POST)
-        if form.is_valid():
-            niveau = form.cleaned_data['niveau_bureautique']
+        # On parcourt tout ce qui a été envoyé pour trouver les réponses aux questions
+        for key, value in request.POST.items():
+            if key.startswith('question_'):
+                reponse_id = value
+                try:
+                    reponse_choisie = Reponse.objects.get(id=reponse_id)
+                    # On enregistre l'ID de la formation associée dans la session
+                    request.session['formation_id'] = reponse_choisie.formation.id
+                except Reponse.DoesNotExist:
+                    pass
+        return redirect('resultat')
+
+    questions = Question.objects.all().prefetch_related('reponses')
+    return render(request, 'utilisateur/questionnaire.html', {'questions': questions})
+
+   
+def resultat(request):
+    formation_id = request.session.get('formation_id')
+    formation = None
+    pourcentage = 0  # Valeur par défaut
+    
+    if formation_id:
+        try:
+            formation = Formation.objects.get(id=formation_id)
+            # Tu peux mettre un pourcentage fixe ou le calculer selon ta logique
+            pourcentage = 90  # Par exemple 90% de compatibilité
+        except Formation.DoesNotExist:
+            pass
             
-            # Redirection vers bureautique si le niveau est débutant
-            if niveau == 'DEB':
-                return render(request, 'orientation/resultat.html', {
-                    'message': "Nous vous conseillons de suivre d'abord une formation en Bureautique."
-                })
+    return render(request, 'utilisateur/resultat.html', {
+        'formation': formation,
+        'pourcentage': pourcentage
+    })
 
-            # Calcul des points par formation selon les réponses choisies
-            scores = {}
-            for key, reponse_id in form.cleaned_data.items():
-                if key.startswith('question_'):
-                    reponse = Reponse.objects.get(id=reponse_id)
-                    formation = reponse.formation
-                    if formation:
-                        scores[formation] = scores.get(formation, 0) + 1
+def resultat(request):
+    formation_id = request.session.get('formation_id')
+    formation = None
+    if formation_id:
+        try:
+            formation = Formation.objects.get(id=formation_id)
+        except Formation.DoesNotExist:
+            pass
+            
+    return render(request, 'utilisateur/resultat.html', {'formation': formation})
+def inscription(request):
+    return render(request, 'utilisateur/inscription.html')
 
-            # Trouver la formation avec le score le plus élevé
-            formation_recommandee = max(scores, key=scores.get) if scores else None
+from django.http import HttpResponse
+from django.template.loader import get_template
+from xhtml2pdf import pisa
 
-            return render(request, 'orientation/resultat.html', {
-                'formation': formation_recommandee
-            })
-    else:
-        form = QuestionnaireForm()
-
-    return render(request, 'orientation/questionnaire.html', {'form': form})
+def generer_pdf_inscription(request):
+    template_path = 'utilisateur/inscription.html'
+    context = {}
+    
+    template = get_template(template_path)
+    html = template.render(context)
+    
+    response = HttpResponse(content_type='application/pdf')
+    response['Content-Disposition'] = 'attachment; filename="fiche_inscription_costm.pdf"'
+    
+    pisa_status = pisa.CreatePDF(html, dest=response)
+    
+    if pisa_status.err:
+        return HttpResponse(f'Erreur lors de la génération <pre>{html}</pre>')
+    return response
+def detail_formation(request, pk):
+    try:
+            formation = Formation.objects.get(pk=pk)
+        except Formation.DoesNotExist:
+            formation = None
+        return render(request, 'utilisateur/detail_formation.html', {'formation': formation})

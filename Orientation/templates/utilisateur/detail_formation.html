@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détails de la formation - C.O.S.T.M.</title>
+    <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
+</head>
+<body>
+    <div style="text-align: center; margin-top: 30px;">
+        {% if formation %}
+            <h1>{{ formation.nom }}</h1>
+            <p style="font-size: 18px; margin: 20px;">{{ formation.description }}</p>
+            
+            <!-- Lien vers l'inscription avec la formation sélectionnée -->
+            <div style="margin-top: 30px;">
+                <a href="{% url 'inscription' %}?formation={{ formation.id }}" style="background: #38a169; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+                    S'inscrire à cette formation
+                </a>
+            </div>
+        {% else %}
+            <p>Cette formation n'existe pas ou a été supprimée.</p>
+        {% endif %}
+    </div>
+
+    <nav style="background: #e2e8f0; padding: 10px 20px; margin-top: 50px; border-radius: 6px; text-align: center;">
+        <a href="{% url 'resultat' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Retour au résultat</a>
+        <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
+        <a href="{% url 'liste_formations' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
+    </nav>
+</body>
+</html>

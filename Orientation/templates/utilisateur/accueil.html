@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Accueil - C.O.S.T.M. Toliara</title>
+    <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
+</head>
+<body>
+
+    
+
+    <!-- Conteneur principal -->
+    <div class="page-container">
+
+        <!-- Bannière principale -->
+        <div class="hero-banner">
+            <span style="font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase; color: #93c5fd; font-weight: 600;">C.O.S.T.M. — TOLIARA</span>
+            <h2>Connectez-vous à votre avenir</h2>
+            <p>Trouvez la formation informatique adaptée à votre niveau et vos objectifs.</p>
+        </div>
+
+        <!-- 3 Stats clés -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="number">5</span>
+                <span class="label">formations</span>
+            </div>
+            <div class="stat-card">
+                <span class="number" style="font-size: 1.1rem; padding-top: 4px;">Certificat d'État</span>
+                <span class="label">agréé réussi</span>
+            </div>
+            <div class="stat-card">
+                <span class="number" style="font-size: 1.1rem; padding-top: 4px;">En Fonction </span>
+                <span class="label">depuis l'année 2002</span>
+            </div>
+        </div>
+
+        <!-- Mission et vision -->
+        <h3 class="section-title">Mission et vision</h3>
+        <p>Former des personnes compétentes en informatique et les orienter vers la formation qui correspond réellement à leur niveau et à leurs objectifs.</p>
+        <p>Devenir le centre de référence à Toliara pour l'orientation et la formation aux métiers du numérique.</p>
+
+        <!-- Pourquoi choisir C.O.S.T.M -->
+        <h3 class="section-title">Pourquoi choisir C.O.S.T.M.</h3>
+        <div class="features-grid">
+            <div class="feature-item">
+                <strong>👨‍💻 Formateurs qualifiés</strong>
+                <span>Ingénieurs en informatique</span>
+            </div>
+            <div class="feature-item">
+                <strong>⏰ Horaires flexibles</strong>
+                <span>Pas de date de rentrée fixe</span>
+            </div>
+            <div class="feature-item">
+                <strong>📜 Certificat d'État</strong>
+                <span>Agréé après réussite</span>
+            </div>
+            <div class="feature-item">
+                <strong>💳 Paiement facilité</strong>
+                <span>Plusieurs modalités</span>
+            </div>
+        </div>
+
+        <!-- Nous contacter -->
+        <h3 class="section-title">Nous contacter</h3>
+        <div class="contact-box">
+            <p>📍 <strong>Adresse :</strong> Rue Carnot, Morafeno — Toliara 601</p>
+            <p>📞 <strong>Téléphone :</strong> 034 21 230 95 / 032 04 269 95</p>
+        </div>
+
+        <!-- Bouton final en bas -->
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="{% url 'questionnaire' %}" class="btn" style="font-size: 1.1rem; padding: 16px 35px; display: inline-block;">Faire le test d'orientation 🚀</a>
+        </div>
+
+    </div>
+
+    <!-- Barre de navigation  -->
+    <nav>
+        <a href="{% url 'accueil_utilisateur' %}">Accueil</a>
+        <a href="{% url 'questionnaire' %}">Questionnaire</a>
+        <a href="{% url 'liste_formations' %}">Formations</a>
+        <a href="{% url 'inscription' %}">Inscription</a>
+    </nav>
+
+</body>
+</html>
