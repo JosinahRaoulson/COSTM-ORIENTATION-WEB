@@ -2,89 +2,222 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Fiche d'Inscription - C.O.S.T.M.</title>
     <style>
+        @page {
+            size: A4 portrait;
+            margin: 1.2cm;
+        }
         body {
-            font-family: Arial, sans-serif;
-            color: #2d3748;
-            margin: 30px;
-            line-height: 1.6;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 10pt;
+            color: #000;
+            line-height: 1.4;
         }
-        .header {
-            text-align: center;
-            border-bottom: 2px solid #3182ce;
-            padding-bottom: 15px;
-            margin-bottom: 30px;
+        .header-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
         }
-        .header h1 {
-            color: #2b6cb0;
-            margin: 0;
-            font-size: 22px;
-        }
-        .content {
-            margin-bottom: 20px;
-        }
-        .info-group {
-            margin-bottom: 12px;
-        }
-        .label {
+        .header-title {
+            font-size: 9pt;
             font-weight: bold;
-            color: #4a5568;
+            color: #333;
         }
-        .photo-container {
-            float: right;
+        .main-title {
+            font-size: 15pt;
+            font-weight: bold;
+            color: #1e3a8a;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .photo-box {
+            width: 3.5cm;
+            height: 4.5cm;
+            border: 1.5px dashed #666;
             text-align: center;
-            margin-left: 20px;
+            vertical-align: middle;
+            font-size: 9pt;
+            color: #555;
+            background-color: #fcfcfc;
         }
-        .photo-container img {
-            width: 120px;
-            height: 150px;
+        .photo-box img {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
-            border: 1px solid #cbd5e0;
-            border-radius: 4px;
+        }
+        .row-line {
+            margin-bottom: 8px;
+        }
+        .checkbox {
+            display: inline-block;
+            width: 11px;
+            height: 11px;
+            border: 1px solid #000;
+            text-align: center;
+            vertical-align: middle;
+            margin-right: 4px;
+            font-size: 8pt;
+            line-height: 10px;
+            font-weight: bold;
+        }
+        .checked {
+            background-color: #1e3a8a;
+            color: #ffffff;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 10pt;
+            margin-top: 12px;
+            margin-bottom: 6px;
+            color: #1e3a8a;
+            text-transform: uppercase;
+        }
+        .payment-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+        .payment-table th, .payment-table td {
+            border: 1px solid #1e3a8a;
+            padding: 7px;
+            text-align: center;
+            font-size: 9.5pt;
+        }
+        .payment-table th {
+            background-color: #f1f5f9;
+            color: #1e3a8a;
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <h1>Fiche d'Inscription - C.O.S.T.M.</h1>
-        <p>Confirmation d'orientation et d'inscription</p>
+    <!-- EN-TÊTE ET PHOTO -->
+    <table class="header-table">
+        <tr>
+            <td style="width: 72%; vertical-align: top;">
+                <div class="header-title">CENTRE D'ORIENTATION DE SYSTÈME ET TECHNOLOGIE MODERNE</div>
+                <div class="main-title">C.O.S.T.M. - <br>FICHE D'INSCRIPTION</div>
+            </td>
+            <td style="width: 28%; text-align: right; vertical-align: top;">
+                <div class="photo-box" style="width: 100px; height: 120px; border: 1px dashed #000; text-align: center; vertical-align: middle;">
+                    {% if photo_base64 %}
+                        <img src="{{ photo_base64 }}" alt="Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                    {% else %}
+                        <br><br>4 x 4
+                    {% endif %}
+                </div>
+            </td>
+        </tr>
+    </table>
+    <!-- FORMATION CHOISIE -->
+        <div style="margin-bottom: 12px; font-size: 10pt;">
+            <strong>Formation choisie :</strong> 
+            <span style="color: #003366; font-weight: bold;">{{ formation.nom|default:inscription.formation.nom|default:"Non spécifiée" }}</span>
+        </div>
+
+    <!-- NUMERO ET DATE -->
+    <table style="width: 100%; margin-bottom: 8px;">
+        <tr>
+            <td><strong>N° d'inscription :</strong> {{ inscription.id|default:"..................................." }}</td>
+           <td><strong>Date du :</strong> {{ inscription.date_inscription|date:"d / m / Y"|default:"........ / ........ / 2026" }}</td>
+        </tr>
+    </table>
+
+    <!-- CIVILITE -->
+    <div class="row-line">
+        <strong>Civilité :</strong> 
+        &nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}checked{% endif %}">{% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}X{% endif %}</span> M. 
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'Mme' %}checked{% endif %}">{% if inscription.civilite == 'Mme' %}X{% endif %}</span> Mme 
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'Mlle' %}checked{% endif %}">{% if inscription.civilite == 'Mlle' %}X{% endif %}</span> Mlle
     </div>
 
-    <div class="content">
-        <!-- Affichage de la photo si elle existe -->
-        {% if inscription.photo %}
-        <div class="photo-container">
-            <img src="{{ request.scheme }}://{{ request.get_host }}{{ inscription.photo.url }}" alt="Photo de profil">
-        </div>
-        {% endif %}
+    <!-- NOM ET PRENOM -->
+    <table style="width: 100%; margin-bottom: 8px;">
+        <tr>
+            <td style="width: 50%;"><strong>Nom :</strong> {{ inscription.nom|default:"........................................" }}</td>
+            <td style="width: 50%;"><strong>Prénom :</strong> {{ inscription.prenom|default:"........................................" }}</td>
+        </tr>
+    </table>
 
-        <div class="info-group">
-            <span class="label">Formation choisie :</span> 
-            <span>{{ formation.nom }}</span>
-        </div>
+    <!-- NAISSANCE -->
+    <table style="width: 100%; margin-bottom: 8px;">
+        <tr>
+            <td style="width: 50%;"><strong>Né(e) le :</strong> {{ inscription.date_naissance|date:"d/m/Y"|default:inscription.date_naissance|default:"........................" }}</td>
+            <td style="width: 50%;"><strong>À :</strong> {{ inscription.lieu_naissance|default:"........................................" }}</td>
+        </tr>
+    </table>
 
-        <div class="info-group">
-            <span class="label">Nom et Prénom :</span> 
-            <span>{{ inscription.nom }} {{ inscription.prenom }}</span>
-        </div>
-
-        <div class="info-group">
-            <span class="label">Email :</span> 
-            <span>{{ inscription.email }}</span>
+    <!-- DOMICILE -->
+        <div class="row-line">
+            <strong>Domicile à :</strong> {{ inscription.domicile|default:"..................................................................................................." }}
         </div>
 
-        <div class="info-group">
-            <span class="label">Téléphone :</span> 
-            <span>{{ inscription.telephone }}</span>
-        </div>
+    <!-- TELEPHONES -->
+    <div class="row-line" style="margin-top: 10px;">
+        <strong>Numéros de téléphone :</strong>
+    </div>
+    <table style="width: 100%; margin-left: 15px; margin-bottom: 8px;">
+        <tr>
+            <td>Telma : {{ inscription.tel_telma|default:"........................" }}</td>
+            <td>Orange : {{ inscription.tel_orange|default:"........................" }}</td>
+            <td>Airtel : {{ inscription.tel_airtel|default:"........................" }}</td>
+        </tr>
+    </table>
 
-        <!-- Ajoute ici les autres champs de ton modèle d'inscription si besoin -->
+    <!-- EMAIL -->
+    <div class="row-line">
+        <strong>E-mail :</strong> {{ inscription.email|default:"..................................................................................." }}
     </div>
 
-    <div style="margin-top: 50px; text-align: center; font-size: 12px; color: #718096; border-top: 1px solid #e2e8f0; padding-top: 15px;">
-        <p>Document généré automatiquement par la plateforme C.O.S.T.M.-ORIENTATION.</p>
-    </div>
+    <!-- HORAIRES -->
+    <div class="section-title">Et heure(s) auquel(s) vous souhaitez :</div>
+<table style="width: 100%; font-size: 9.5pt;">
+    <tr>
+        <td style="width: 50%; padding-bottom: 5px;">
+            <span class="checkbox {% if '08h00' in inscription.horaire %}checked{% endif %}">{% if '08h00' in inscription.horaire %}X{% endif %}</span> 08h00 à 09h30
+        </td>
+        <td style="width: 50%; padding-bottom: 5px;">
+            <span class="checkbox {% if '09h30' in inscription.horaire %}checked{% endif %}">{% if '09h30' in inscription.horaire %}X{% endif %}</span> 09h30 à 11h30
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 50%; padding-bottom: 5px;">
+            <span class="checkbox {% if '14h30' in inscription.horaire %}checked{% endif %}">{% if '14h30' in inscription.horaire %}X{% endif %}</span> 14h30 à 16h00
+        </td>
+        <td style="width: 50%; padding-bottom: 5px;">
+            <span class="checkbox {% if '16h00' in inscription.horaire %}checked{% endif %}">{% if '16h00' in inscription.horaire %}X{% endif %}</span> 16h00 à 17h30
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <span class="checkbox {% if '17h30' in inscription.horaire %}checked{% endif %}">{% if '17h30' in inscription.horaire %}X{% endif %}</span> 17h30 à 19h00
+        </td>
+    </tr>
+</table>
+    <!-- MODE DE PAIEMENT -->
+    <div class="section-title">Mode de paiement</div>
+    <table class="payment-table">
+        <thead>
+            <tr>
+                <th style="width: 33%;">Date</th>
+                <th style="width: 34%;">Montant</th>
+                <th style="width: 33%;">Émargement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="height: 25px;">{{ inscription.date_paiement_1|date:"d/m/Y"|default:"jj/mm/aaaa" }}</td>
+                <td>{{ inscription.montant_1|default:"Montant" }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="height: 25px;">{{ inscription.date_paiement_2|date:"d/m/Y"|default:"jj/mm/aaaa" }}</td>
+                <td>{{ inscription.montant_2|default:"Montant" }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 
 </body>
 </html>

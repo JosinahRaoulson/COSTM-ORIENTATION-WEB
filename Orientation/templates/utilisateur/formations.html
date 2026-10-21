@@ -7,25 +7,30 @@
     <link rel="stylesheet" href="{% static 'utilisateur/style.css' %}">
 </head>
 <body>
-    <h1>Nos formations informatiques</h1>
-    
-    <ul>
-        {% for formation in formations %}
-            <li>
-                <strong>{{ formation.nom }}</strong>
-                <p>{{ formation.description }}</p>
-            </li>
-        {% empty %}
-            <li>Aucune formation pour le moment.</li>
-        {% endfor %}
-    </ul>
-       
-    
+    <div class="container" style="background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 800px; margin: 40px auto;">
+        
+        <h1 style="text-align: center; color: #1a365d; margin-bottom: 25px;">Nos formations informatiques</h1>
+        
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            {% for formation in formations %}
+                <div style="background: #f7fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0;">
+                    <h3 style="color: #2b6cb0; margin-top: 0; margin-bottom: 10px;">{{ formation.nom }}</h3>
+                    <p style="color: #4a5568; line-height: 1.6; margin: 0;">{{ formation.description }}</p>
+                </div>
+            {% empty %}
+                <p style="text-align: center; color: #718096;">Aucune formation pour le moment.</p>
+            {% endfor %}
+        </div>
+
+    </div>
+
+   
 </body>
-<nav style="background: #e2e8f0; padding: 10px 20px; margin-bottom: 20px; border-radius: 6px;">
-    <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
-    <a href="{% url 'questionnaire' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Questionnaire</a>
-    <a href="{% url 'liste_formations' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
-    <a href="{% url 'inscription' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Inscription</a>
-</nav>
+ <!-- Barre de navigation -->
+    <nav style="background: #e2e8f0; padding: 10px 20px; margin: 20px auto; max-width: 800px; border-radius: 6px; text-align: center;">
+        <a href="{% url 'accueil_utilisateur' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Accueil</a>
+        <a href="{% url 'questionnaire' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Questionnaire</a>
+        <a href="{% url 'liste_formations' %}" style="margin-right: 15px; text-decoration: none; color: #2d3748; font-weight: bold;">Formations</a>
+        <a href="{% url 'inscription' %}" style="text-decoration: none; color: #2d3748; font-weight: bold;">Inscription</a>
+    </nav>
 </html>

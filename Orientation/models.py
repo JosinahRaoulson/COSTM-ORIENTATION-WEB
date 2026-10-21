@@ -29,14 +29,49 @@ class QuestionPreliminaire(models.Model) :
         return self.texte
 
 
+
 class Inscription(models.Model):
-    formation = models.ForeignKey('Formation', on_delete=models.CASCADE)
+    # Formation et identité de base
+    formation = models.ForeignKey('Formation', on_delete=models.SET_NULL, null=True, blank=True)
+    
+    # Nouveaux champs pour compléter la fiche PDF
+    CIVILITE_CHOICES = [
+        ('M.', 'M.'),
+        ('Mme', 'Mme'),
+        ('Mlle', 'Mlle'),
+    ]
+    civilite = models.CharField(max_length=10, choices=CIVILITE_CHOICES, blank=True, null=True)
+    
     nom = models.CharField(max_length=100)
     prenom = models.CharField(max_length=100)
-    email = models.EmailField()
-    telephone = models.CharField(max_length=20)
-    photo = models.ImageField(upload_to='photos_inscriptions/')
+    
+    date_naissance = models.DateField(blank=True, null=True)
+    lieu_naissance = models.CharField(max_length=150, blank=True, null=True)
+    domicile = models.CharField(max_length=255, blank=True, null=True)
+    
+    email = models.EmailField(blank=True, null=True)
+    telephone = models.CharField(max_length=20, blank=True, null=True)
+    tel_telma = models.CharField(max_length=20, blank=True, null=True)
+    tel_orange = models.CharField(max_length=20, blank=True, null=True)
+    tel_airtel = models.CharField(max_length=20, blank=True, null=True)
+    
+    # Horaire souhaité
+    horaire = models.CharField(max_length=50, blank=True, null=True)
+    
+    # Mode de paiement (Exemple pour 2 versements)
+    date_paiement_1 = models.DateField(blank=True, null=True)
+    montant_1 = models.CharField(max_length=50, blank=True, null=True)
+    date_paiement_2 = models.DateField(blank=True, null=True)
+    montant_2 = models.CharField(max_length=50, blank=True, null=True)
+    
+    photo = models.ImageField(upload_to='photos_inscriptions/', blank=True, null=True)
     date_inscription = models.DateTimeField(auto_now_add=True)
+    @property
+    def photo_path_safe(self):
+        if self.photo:
+            # Remplace les antislashs Windows par des slashs standards
+            return self.photo.path.replace('\\', '/')
+        return ''
 
     def __str__(self):
         return f"{self.nom} {self.prenom}"

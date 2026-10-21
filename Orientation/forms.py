@@ -1,5 +1,5 @@
 from django import forms
-from .models import QuestionPreliminaire, Question, Reponse
+from .models import QuestionPreliminaire, Question, Reponse, Inscription
 
 class QuestionnaireForm(forms.Form):
     # Field pour la question préliminaire
@@ -23,3 +23,8 @@ class QuestionnaireForm(forms.Form):
                 widget=forms.RadioSelect,
                 required=True
             )
+class InscriptionForm(forms.ModelForm):
+    class Meta:
+        model = Inscription
+        fields = '__all__'
+        exclude = ['formation']

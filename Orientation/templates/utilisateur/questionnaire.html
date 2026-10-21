@@ -12,6 +12,11 @@
 
     <form method="POST">
     {% csrf_token %}
+    {% if erreur %}
+            <div style="background-color: #f8d7da; color: #721c24; padding: 10px; border-radius: 5px; margin-bottom: 15px; border: 1px solid #f5c6cb;">
+                {{ erreur }}
+            </div>
+    {% endif %}
     <ul>
         {% for question in questions %}
             <li>
@@ -20,7 +25,7 @@
                 <!-- Boucle sur les réponses de la question -->
                 {% for reponse in question.reponses.all %}
                     <label>
-                        <input type="radio" name="question_{{ question.id }}" value="{{ reponse.id }}">
+                        <input type="radio" name="question_{{ question.id }}" value="{{ reponse.id }}" >
                         {{ reponse.texte }}
                     </label><br>
                 {% empty %}
