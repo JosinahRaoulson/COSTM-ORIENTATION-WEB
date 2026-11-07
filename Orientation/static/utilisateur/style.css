@@ -1,3 +1,32 @@
+/* ==========================================================================
+   C.O.S.T.M. TOLIARA - FOND TECH LUMINEUX & PRO
+   ========================================================================== */
+
+body {
+    background-color: #f1f5f9 !important;
+    background-image: 
+        radial-gradient(circle at 50% 0%, #ffffff 0%, #e2e8f0 100%),
+        linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px) !important;
+    background-size: 100% 100%, 25px 25px, 25px 25px !important;
+    background-attachment: fixed !important;
+    color: #1e293b !important;
+}
+
+/* --- Cartes style Dashboard SaaS avec effet d'élévation --- */
+.page-container, .dash-card, .stat-card, li, .feature-item, .contact-box {
+    background: #ffffff !important;
+    border: 1px solid #cbd5e1 !important;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.08) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Effet de survol moderne et dynamique */
+.stat-card:hover, .feature-item:hover, li:hover, .dash-card:hover {
+    transform: translateY(-3px) !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.15) !important;
+}
 /* --- Style Global --- */
 body {
     font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
@@ -10,6 +39,7 @@ body {
     align-items: center;
     min-height: 100vh;
 }
+
 
 /* --- Barre de navigation --- */
 nav {
@@ -377,4 +407,139 @@ input[type="radio"] {
     background-color: #e2e8f0;
     color: #1e293b;
     font-weight: 700;
+}
+
+/* ==========================================================================
+   STYLE SPECIFIQUE PAGE FORMATIONS (DESIGN SAAS PRO)
+   ========================================================================== */
+
+.page-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.tech-badge {
+    background: rgba(37, 99, 235, 0.1);
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.page-header h1 {
+    font-size: 2.1rem;
+    color: #0f172a;
+    margin: 5px 0 10px 0;
+}
+
+.page-header p {
+    color: #64748b;
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Grille en 2 colonnes modernes */
+.formations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+/* Carte de formation style Dashboard */
+.formation-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+.formation-card:hover {
+    border-color: #2563eb;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.card-icon {
+    font-size: 1.5rem;
+    background: #f1f5f9;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+}
+
+.status-tag {
+    background: #f0fdf4;
+    color: #16a34a;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 20px;
+    border: 1px solid #bbf7d0;
+}
+
+.formation-card h3 {
+    color: #0f172a;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.formation-card p {
+    color: #475569;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.card-footer {
+    border-top: 1px solid #f1f5f9;
+    padding-top: 15px;
+    text-align: right;
+}
+
+.btn-card {
+    background: #0f172a;
+    color: #ffffff !important;
+    padding: 9px 18px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.btn-card:hover {
+    background: #2563eb;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.empty-state {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #94a3b8;
 }

@@ -32,14 +32,16 @@
             margin-bottom: 15px;
         }
         .photo-box {
-            width: 3.5cm;
-            height: 4.5cm;
+            width: 3.2cm;
+            height: 4.2cm;
             border: 1.5px dashed #666;
             text-align: center;
             vertical-align: middle;
             font-size: 9pt;
             color: #555;
             background-color: #fcfcfc;
+            border-radius: 6px;
+            overflow: hidden;
         }
         .photo-box img {
             width: 100%;
@@ -95,41 +97,44 @@
     <!-- EN-TÊTE ET PHOTO -->
     <table class="header-table">
         <tr>
-            <td style="width: 72%; vertical-align: top;">
+            <td style="width: 70%; vertical-align: top;">
                 <div class="header-title">CENTRE D'ORIENTATION DE SYSTÈME ET TECHNOLOGIE MODERNE</div>
                 <div class="main-title">C.O.S.T.M. - <br>FICHE D'INSCRIPTION</div>
             </td>
-            <td style="width: 28%; text-align: right; vertical-align: top;">
-                <div class="photo-box" style="width: 100px; height: 120px; border: 1px dashed #000; text-align: center; vertical-align: middle;">
+            <td style="width: 30%; text-align: right; vertical-align: top;">
+                <div class="photo-box">
                     {% if photo_base64 %}
-                        <img src="{{ photo_base64 }}" alt="Photo" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="{{ photo_base64 }}" alt="Photo">
+                    {% elif inscription.photo %}
+                        <img src="{{ inscription.photo.url }}" alt="Photo">
                     {% else %}
-                        <br><br>4 x 4
+                        <div style="padding-top: 55px;">4 x 4</div>
                     {% endif %}
                 </div>
             </td>
         </tr>
     </table>
+
     <!-- FORMATION CHOISIE -->
-        <div style="margin-bottom: 12px; font-size: 10pt;">
-            <strong>Formation choisie :</strong> 
-            <span style="color: #003366; font-weight: bold;">{{ formation.nom|default:inscription.formation.nom|default:"Non spécifiée" }}</span>
-        </div>
+    <div style="margin-bottom: 12px; font-size: 10pt;">
+        <strong>Formation choisie :</strong> 
+        <span style="color: #003366; font-weight: bold;">{{ formation.nom|default:inscription.formation.nom|default:"Non spécifiée" }}</span>
+    </div>
 
     <!-- NUMERO ET DATE -->
     <table style="width: 100%; margin-bottom: 8px;">
         <tr>
             <td><strong>N° d'inscription :</strong> {{ inscription.id|default:"..................................." }}</td>
-           <td><strong>Date du :</strong> {{ inscription.date_inscription|date:"d / m / Y"|default:"........ / ........ / 2026" }}</td>
+            <td><strong>Date du :</strong> {{ inscription.date_inscription|date:"d / m / Y"|default:"........ / ........ / 2026" }}</td>
         </tr>
     </table>
 
     <!-- CIVILITE -->
     <div class="row-line">
         <strong>Civilité :</strong> 
-        &nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}checked{% endif %}">{% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}X{% endif %}</span> M. 
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'Mme' %}checked{% endif %}">{% if inscription.civilite == 'Mme' %}X{% endif %}</span> Mme 
-        &nbsp;&nbsp;&nbsp;&nbsp;<span class="checkbox {% if inscription.civilite == 'Mlle' %}checked{% endif %}">{% if inscription.civilite == 'Mlle' %}X{% endif %}</span> Mlle
+          <span class="checkbox {% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}checked{% endif %}">{% if inscription.civilite == 'M' or inscription.civilite == 'M.' %}X{% endif %}</span> M. 
+            <span class="checkbox {% if inscription.civilite == 'Mme' %}checked{% endif %}">{% if inscription.civilite == 'Mme' %}X{% endif %}</span> Mme 
+            <span class="checkbox {% if inscription.civilite == 'Mlle' %}checked{% endif %}">{% if inscription.civilite == 'Mlle' %}X{% endif %}</span> Mlle
     </div>
 
     <!-- NOM ET PRENOM -->
@@ -149,9 +154,9 @@
     </table>
 
     <!-- DOMICILE -->
-        <div class="row-line">
-            <strong>Domicile à :</strong> {{ inscription.domicile|default:"..................................................................................................." }}
-        </div>
+    <div class="row-line">
+        <strong>Domicile à :</strong> {{ inscription.domicile|default:"..................................................................................................." }}
+    </div>
 
     <!-- TELEPHONES -->
     <div class="row-line" style="margin-top: 10px;">
@@ -159,9 +164,9 @@
     </div>
     <table style="width: 100%; margin-left: 15px; margin-bottom: 8px;">
         <tr>
-            <td>Telma : {{ inscription.tel_telma|default:"........................" }}</td>
-            <td>Orange : {{ inscription.tel_orange|default:"........................" }}</td>
-            <td>Airtel : {{ inscription.tel_airtel|default:"........................" }}</td>
+            <td>Telma : {{ inscription.telma|default:inscription.tel_telma|default:"........................" }}</td>
+            <td>Orange : {{ inscription.orange|default:inscription.tel_orange|default:"........................" }}</td>
+            <td>Airtel : {{ inscription.airtel|default:inscription.tel_airtel|default:"........................" }}</td>
         </tr>
     </table>
 
@@ -172,29 +177,29 @@
 
     <!-- HORAIRES -->
     <div class="section-title">Et heure(s) auquel(s) vous souhaitez :</div>
-<table style="width: 100%; font-size: 9.5pt;">
-    <tr>
-        <td style="width: 50%; padding-bottom: 5px;">
-            <span class="checkbox {% if '08h00' in inscription.horaire %}checked{% endif %}">{% if '08h00' in inscription.horaire %}X{% endif %}</span> 08h00 à 09h30
-        </td>
-        <td style="width: 50%; padding-bottom: 5px;">
-            <span class="checkbox {% if '09h30' in inscription.horaire %}checked{% endif %}">{% if '09h30' in inscription.horaire %}X{% endif %}</span> 09h30 à 11h30
-        </td>
-    </tr>
-    <tr>
-        <td style="width: 50%; padding-bottom: 5px;">
-            <span class="checkbox {% if '14h30' in inscription.horaire %}checked{% endif %}">{% if '14h30' in inscription.horaire %}X{% endif %}</span> 14h30 à 16h00
-        </td>
-        <td style="width: 50%; padding-bottom: 5px;">
-            <span class="checkbox {% if '16h00' in inscription.horaire %}checked{% endif %}">{% if '16h00' in inscription.horaire %}X{% endif %}</span> 16h00 à 17h30
-        </td>
-    </tr>
-    <tr>
-        <td colspan="2">
-            <span class="checkbox {% if '17h30' in inscription.horaire %}checked{% endif %}">{% if '17h30' in inscription.horaire %}X{% endif %}</span> 17h30 à 19h00
-        </td>
-    </tr>
-</table>
+    <table style="width: 100%; font-size: 9.5pt;">
+        <tr>
+            <td style="width: 50%; padding-bottom: 5px;">
+                <span class="checkbox {% if inscription.horaire == '08h00 à 09h30' or '08h00 à 09h30' in inscription.horaire %}checked{% endif %}">{% if inscription.horaire == '08h00 à 09h30' or '08h00 à 09h30' in inscription.horaire %}X{% endif %}</span> 08h00 à 09h30
+            </td>
+            <td style="width: 50%; padding-bottom: 5px;">
+                <span class="checkbox {% if inscription.horaire == '09h30 à 11h30' or '09h30 à 11h30' in inscription.horaire %}checked{% endif %}">{% if inscription.horaire == '09h30 à 11h30' or '09h30 à 11h30' in inscription.horaire %}X{% endif %}</span> 09h30 à 11h30
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 50%; padding-bottom: 5px;">
+                <span class="checkbox {% if inscription.horaire == '14h30 à 16h00' or '14h30 à 16h00' in inscription.horaire %}checked{% endif %}">{% if inscription.horaire == '14h30 à 16h00' or '14h30 à 16h00' in inscription.horaire %}X{% endif %}</span> 14h30 à 16h00
+            </td>
+            <td style="width: 50%; padding-bottom: 5px;">
+                <span class="checkbox {% if inscription.horaire == '16h00 à 17h30' or '16h00 à 17h30' in inscription.horaire %}checked{% endif %}">{% if inscription.horaire == '16h00 à 17h30' or '16h00 à 17h30' in inscription.horaire %}X{% endif %}</span> 16h00 à 17h30
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <span class="checkbox {% if inscription.horaire == '17h30 à 19h00' or '17h30 à 19h00' in inscription.horaire %}checked{% endif %}">{% if inscription.horaire == '17h30 à 19h00' or '17h30 à 19h00' in inscription.horaire %}X{% endif %}</span> 17h30 à 19h00
+            </td>
+        </tr>
+    </table>
     <!-- MODE DE PAIEMENT -->
     <div class="section-title">Mode de paiement</div>
     <table class="payment-table">
