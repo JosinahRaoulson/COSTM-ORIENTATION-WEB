@@ -1,0 +1,1 @@
+web: gunicorn costm_orientation.wsgi --log-file -
