@@ -1,1 +1,1 @@
-web: gunicorn costm_orientation.wsgi --log-file -
+web: python manage.py migrate && python manage.py loaddata initial_data.json && gunicorn costm_orientation.wsgi:application
