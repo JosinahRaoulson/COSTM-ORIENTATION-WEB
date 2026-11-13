@@ -125,6 +125,9 @@ def inscription(request, formation_id=None):
             
             # 1. On stocke l'ID en session pour identifier cet étudiant précis
             request.session['inscription_id'] = inscription_obj.id
+
+            if 'formation_id' in request.session:
+                del request.session['formation_id']
             
             # 2. SOLUTION DIRECTE : Au lieu d'aller sur une page de succès, 
             # on déclenche directement la vue de génération du PDF !
