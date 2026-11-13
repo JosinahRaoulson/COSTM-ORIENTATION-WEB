@@ -545,3 +545,20 @@ input[type="radio"] {
     padding: 40px;
     color: #94a3b8;
 }
+/* Ajustement simple et propre pour mobile */
+@media (max-width: 768px) {
+    body {
+        padding-bottom: 70px; /* Laisse de la place pour la barre du bas */
+    }
+    
+    /* La barre de navigation du bas reste fixée proprement */
+    nav, .navbar, .bottom-nav {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+    }
+}
