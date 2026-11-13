@@ -28,6 +28,8 @@ body {
     box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.15) !important;
 }
 /* --- Style Global --- */
+
+
 body {
     font-family: 'Poppins', 'Segoe UI', system-ui, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -542,4 +544,36 @@ input[type="radio"] {
     text-align: center;
     padding: 40px;
     color: #94a3b8;
+}
+/* Adaptation automatique pour téléphone (écrans < 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 10px 80px 10px !important; /* Espace en bas pour la barre */
+    }
+
+    .container, main, section {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 15px !important;
+    }
+
+    /* Les grilles passent sur 1 seule colonne sur mobile */
+    .grid, .cards, .features {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    /* Fixe la barre de navigation tout en bas de l'écran du téléphone */
+    nav, .navbar, .bottom-nav {
+        position: fixed !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        z-index: 1000;
+    }
 }
