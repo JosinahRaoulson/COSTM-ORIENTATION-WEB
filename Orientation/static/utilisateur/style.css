@@ -545,35 +545,20 @@ input[type="radio"] {
     padding: 40px;
     color: #94a3b8;
 }
-/* Adaptation automatique pour téléphone (écrans < 768px) */
+/* Ajustement simple et propre pour mobile */
 @media (max-width: 768px) {
     body {
-        padding: 10px 10px 80px 10px !important; /* Espace en bas pour la barre */
+        padding-bottom: 70px; /* Laisse de la place pour la barre du bas */
     }
-
-    .container, main, section {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin: 0 auto !important;
-        padding: 15px !important;
-    }
-
-    /* Les grilles passent sur 1 seule colonne sur mobile */
-    .grid, .cards, .features {
-        grid-template-columns: 1fr !important;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    /* Fixe la barre de navigation tout en bas de l'écran du téléphone */
+    
+    /* La barre de navigation du bas reste fixée proprement */
     nav, .navbar, .bottom-nav {
         position: fixed !important;
         bottom: 0 !important;
         left: 0 !important;
-        right: 0 !important;
         width: 100% !important;
-        border-radius: 0 !important;
-        margin: 0 !important;
         z-index: 1000;
+        background: #ffffff;
+        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
     }
 }
