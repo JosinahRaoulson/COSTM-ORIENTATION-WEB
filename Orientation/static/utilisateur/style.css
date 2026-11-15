@@ -546,34 +546,42 @@ input[type="radio"] {
     color: #94a3b8;
 }
 
-/* Correction définitive du zoom et des largeurs sur mobile */
+/* Correctif d'urgence mobile : anti-débordement total et retour à la ligne */
 @media screen and (max-width: 768px) {
     html, body {
-        width: 100% !important;
         overflow-x: hidden !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        -webkit-text-size-adjust: 100%; /* Empêche le zoom automatique du texte sur mobile */
-    }
-
-    body {
-        padding-bottom: 70px !important; /* Laisse de la place pour la barre du bas */
-    }
-
-    /* Force tous les conteneurs principaux à respecter la largeur de l'écran */
-    .container, main, section, .card, form, div {
+        width: 100% !important;
         max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 8px 80px 8px !important;
         box-sizing: border-box !important;
     }
 
-    /* Fixe proprement la barre de navigation du bas */
+    /* Empêche n'importe quel élément de dépasser de l'écran */
+    * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* Force les conteneurs et cartes à s'ajuster */
+    .container, main, section, .card, div, form {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+
+    /* Barre de navigation fixe en bas propre */
     nav, .navbar, .bottom-nav {
         position: fixed !important;
         bottom: 0 !important;
         left: 0 !important;
         right: 0 !important;
         width: 100% !important;
-        margin: 0 !important;
         z-index: 1000;
         background: #ffffff !important;
         box-shadow: 0 -2px 10px rgba(0,0,0,0.1) !important;
